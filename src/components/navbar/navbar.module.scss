@@ -1,0 +1,189 @@
+$animate-ease-in: all 0.2s ease-in-out;
+$animate-ease-out: all 0.2s ease-in-out;
+$animate-ease-in-out: all 0.2s ease-in-out;
+
+.NavbarItems {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbarLogo {
+  display: flex;
+  cursor: pointer;
+  h1 {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.menuIcon {
+  cursor: pointer;
+  display: none;
+  .xIcon,
+  .hamburgerIcon {
+    font-size: 1.8rem;
+    display: flex;
+  }
+}
+
+.navMenu {
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.navLinks {
+  padding: 0 0.8rem;
+  font-size: 1.3rem;
+  transition: $animate-ease-in-out;
+
+  &:after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: -6px;
+    border-radius: 1rem;
+    width: 0%;
+    height: 3px;
+    margin: 0 auto;
+    transition: $animate-ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0.2;
+    background-color: darken(#000, 5%);
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.active {
+  &:after {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+// Media Query
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .navMenu {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 10vh;
+    left: 0%;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    transition-duration: 0.5s;
+    z-index: 1;
+    visibility: hidden;
+    filter: blur(3px);
+    .navLinks {
+      background-color: #fff;
+      color: #fff;
+      font-size: 0px;
+      border: 0px solid #fff;
+      padding: 0;
+      opacity: 1;
+      transition: all 0.2s ease-out;
+      transition-duration: 0.2s;
+      visibility: hidden;
+      filter: blur(3px);
+    }
+  }
+
+  .navMenuActive {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    transition-duration: 0.2s;
+    z-index: 1;
+    visibility: visible;
+    .navLinks {
+      font-size: 1.3rem;
+      padding: 2rem 0;
+      opacity: 1;
+      transition: all 0.2s ease-in;
+      transition-duration: 0.4s;
+      visibility: visible;
+    }
+  }
+
+  .navLinks {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    transition: $animate-ease-in-out;
+    border-bottom: 2px solid #000;
+
+    &:after {
+      content: none;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .active {
+    color: #fff;
+    background-color: #000;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .navbarLogo {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .navLinks {
+    padding: 2rem 0;
+  }
+}

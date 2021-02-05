@@ -1,0 +1,21 @@
+.container {
+  background-color: #343434;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    height: 10vh;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}

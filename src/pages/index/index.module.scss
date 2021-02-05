@@ -1,0 +1,60 @@
+.indexContainer {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+
+  .heroImg {
+    margin: auto;
+    div {
+      margin: auto;
+    }
+  }
+
+  .heroBio {
+    margin: auto;
+    h1 {
+      font-size: 3.4rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+    .indexCta {
+      width: 240px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .indexContainer {
+    height: 90vh;
+    .heroBio {
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+
+      .indexCta {
+        width: 100%;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .indexContainer {
+    .heroBio {
+      margin: 0;
+
+      h1,
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
