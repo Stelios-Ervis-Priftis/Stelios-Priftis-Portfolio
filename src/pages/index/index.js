@@ -34,7 +34,7 @@ const Index_Page = () => {
                 variant="outline-primary"
                 className={indexStyles.indexCta}
               >
-                Contact me
+                Contact Me
               </Button>
             </Link>
           </Col>
