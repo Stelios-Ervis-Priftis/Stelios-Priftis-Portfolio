@@ -264,4 +264,5 @@ Use of layout on `index.js`
 	  </Layout>
 	)
 	
-	export default Index_Page
+	export default Index_Pa ge
+

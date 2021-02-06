@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Stelios Priftis Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A motivated and reliable Front End Developer who is looking to grow within a Tech company.`,
     author: `Stelios Priftis`,
+    firstName: `Stelios`,
+    lastName: `Priftis`,
+    profession: `Front End Developer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `SteliosPriftis-Portfolio`,
+        name: `Stelios-Priftis-Portfolio`,
         short_name: `Portfolio`,
         start_url: `/`,
         background_color: `#663399`,
