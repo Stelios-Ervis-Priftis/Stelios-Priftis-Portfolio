@@ -3,6 +3,7 @@ $animate-ease-out: all 0.2s ease-in-out;
 $animate-ease-in-out: all 0.2s ease-in-out;
 
 .NavbarItems {
+  background-color: #fff;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -81,6 +82,17 @@ $animate-ease-in-out: all 0.2s ease-in-out;
     flex-wrap: wrap;
   }
 
+  .NavbarItemsActive {
+    background-color: #fff;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    z-index: 1;
+  }
+
   .navMenu {
     background-color: #fff;
     display: flex;
@@ -126,8 +138,8 @@ $animate-ease-in-out: all 0.2s ease-in-out;
     top: 10vh;
     left: 0;
     opacity: 1;
-    transition: all 0.2s ease-in;
-    transition-duration: 0.2s;
+    // transition: all 0.2s ease-in;
+    // transition-duration: 0.2s;
     z-index: 1;
     visibility: visible;
     .navLinks {
@@ -135,7 +147,7 @@ $animate-ease-in-out: all 0.2s ease-in-out;
       padding: 2rem 0;
       opacity: 1;
       transition: all 0.2s ease-in;
-      transition-duration: 0.4s;
+      transition-duration: 0.3s;
       visibility: visible;
     }
   }

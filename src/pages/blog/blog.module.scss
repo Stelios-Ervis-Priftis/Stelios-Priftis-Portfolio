@@ -1,0 +1,32 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  margin: 1rem auto;
+}
+
+.card-wrapper {
+  flex-direction: row;
+}
+
+// .cardImg {
+//   width: 50% !important;
+// }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  // margin-left: 2rem;
+  div {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  button {
+    width: 50%;
+  }
+}

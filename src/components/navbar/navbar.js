@@ -18,7 +18,12 @@ const Navbar = () => {
   const [open, toggleHumbugger] = useState(false)
 
   return (
-    <Container fluid className={navbarStyles.NavbarItems}>
+    <Container
+      fluid
+      className={
+        open ? navbarStyles.NavbarItemsActive : navbarStyles.NavbarItems
+      }
+    >
       <Link to="/" className={navbarStyles.navbarLogo}>
         <h1>FRONT END DEVELOPER</h1>
       </Link>

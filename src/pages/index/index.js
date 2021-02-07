@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 // Component Import
+import SEO from "../../components/seo"
 import Layout from "../../components/layout/layout"
 import Image from "../../components/image"
-import SEO from "../../components/seo"
 
 // React Bootstrap Import
 import { Container, Row, Col, Button } from "react-bootstrap"
@@ -17,9 +17,14 @@ const Index_Page = () => {
     <Layout>
       <SEO title="Home" />
       <Container fluid className={indexStyles.indexContainer}>
-        <Row className={indexStyles.indexRow}>
+        <Row>
           <Col lg="6" className={indexStyles.heroImg}>
-            <Image />
+            <Image
+              fileName="hero.jpeg"
+              className="rounded-circle"
+              style={{ width: "100%" }}
+              alt="Hero of the pic"
+            />
           </Col>
 
           <Col lg="6" className={indexStyles.heroBio}>
