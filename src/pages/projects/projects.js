@@ -10,9 +10,9 @@ import Image from "../../components/image"
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
 
 // Style Import
-import blogStyles from "./blog.module.scss"
+import projectsStyle from "./projects.module.scss"
 
-const Blog_Page = () => {
+const Projects_Page = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -28,23 +28,24 @@ const Blog_Page = () => {
       }
     }
   `)
+
   return (
     <Layout>
-      <SEO title="Blog" />
-      <Container fluid className={blogStyles.blogContainer}>
-        <h1>Blog Page</h1>
+      <SEO title="Projects" />
+      <Container fluid className={projectsStyle.projectsContainer}>
+        <h1 className={projectsStyle.projectTitle}>Projects Page</h1>
 
         <Row>
           {data.allMarkdownRemark.edges.map((project, index) => {
             return (
-              <Col lg={6} key={index} className={blogStyles.cardContainer}>
-                <Card className={blogStyles.cardWrapper}>
+              <Col lg={6} key={index} className={projectsStyle.cardContainer}>
+                <Card className={projectsStyle.cardWrapper}>
                   <Image
                     fileName={project.node.frontmatter.imgName}
-                    className={`${blogStyles.cardImg} rounded`}
+                    className={`${projectsStyle.cardImg} rounded`}
                     style={{ width: "300px" }}
                   />
-                  <Card.Body className={blogStyles.cardBody}>
+                  <Card.Body className={projectsStyle.cardBody}>
                     <Card.Title>{project.node.frontmatter.title}</Card.Title>
                     <Card.Text>{project.node.frontmatter.techUsed}</Card.Text>
                     <Button variant="primary">Go somewhere</Button>
@@ -54,20 +55,9 @@ const Blog_Page = () => {
             )
           })}
         </Row>
-
-        {/* <ul>
-          {data.allMarkdownRemark.edges.map((project, index) => {
-            return (
-              <li key={index}>
-                <h1>{project.node.frontmatter.title}</h1>
-                <p>{project.node.frontmatter.techUsed}</p>
-              </li>
-            )
-          })}
-        </ul> */}
       </Container>
     </Layout>
   )
 }
 
-export default Blog_Page
+export default Projects_Page

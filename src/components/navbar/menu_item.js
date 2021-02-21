@@ -12,8 +12,8 @@ export const MenuItems = [
     isActive: "active",
   },
   {
-    text: "Blog",
-    url: "/blog",
+    text: "Projects",
+    url: "/projects",
     cName: "navLinks",
     isActive: "active",
   },

@@ -17,11 +17,11 @@ const Image = ({ fileName, className, style, alt }) => {
     }
   `)
 
-  const fluid = allImageSharp.nodes.find(
+  const fluidImg = allImageSharp.nodes.find(
     img => img.fluid.originalName === fileName
   ).fluid
 
-  return <Img fluid={fluid} className={className} style={style} alt={alt} />
+  return <Img fluid={fluidImg} className={className} style={style} alt={alt} />
 }
 
 export default Image

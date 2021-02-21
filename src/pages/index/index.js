@@ -17,7 +17,7 @@ const Index_Page = () => {
     <Layout>
       <SEO title="Home" />
       <Container fluid className={indexStyles.indexContainer}>
-        <Row>
+        <Row className={indexStyles.indexRow}>
           <Col lg="6" className={indexStyles.heroImg}>
             <Image
               fileName="hero.jpeg"

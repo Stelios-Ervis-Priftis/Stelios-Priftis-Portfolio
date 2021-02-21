@@ -31,13 +31,13 @@ exports.onCreatePage = ({ page, actions }) => {
     }
 
     // if the page component is the blog page component
-    if (page.componentPath === `${__dirname}/src/pages/blog/blog.js`) {
+    if (page.componentPath === `${__dirname}/src/pages/projects/projects.js`) {
       deletePage(page)
 
       // create a new page but with '/' as path
       createPage({
         ...page,
-        path: "/blog",
+        path: "/projects",
       })
     }
 
