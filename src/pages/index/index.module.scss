@@ -1,78 +1,120 @@
-.indexContainer {
+.index-container {
   display: flex;
   justify-content: center;
-  position: absolute;
   height: 80vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
   .index-row {
     width: 100%;
-  }
 
-  .heroImg {
-    margin: auto;
-    div {
+    .hero-img {
       margin: auto;
-    }
-  }
-
-  .heroBio {
-    margin: auto;
-    h1 {
-      font-size: 3.4rem;
-    }
-
-    p {
-      width: 80%;
-      font-size: 1.3rem;
-    }
-    .indexCta {
-      width: 240px;
-      font-weight: bold;
-    }
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .indexContainer {
-    .heroImg {
       div {
-        max-width: 400px !important;
+        margin: auto;
       }
     }
-    .heroBio {
-      text-align: center;
+
+    .hero-bio {
+      margin: auto;
       h1 {
-        font-size: 1.9rem;
-      }
-      p {
-        width: 100%;
-        font-size: 1rem;
+        font-size: 3.4rem;
       }
 
-      .indexCta {
-        width: 100%;
+      p {
+        width: 80%;
+        font-size: 1.3rem;
+      }
+      .index-cta {
+        width: 240px;
         font-weight: bold;
       }
     }
   }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .indexContainer {
+@media screen and (max-width: 991px) {
+  .index-container {
     height: 80vh;
-    position: unset;
-    transform: none;
-    .heroBio {
-      margin: 0;
 
-      h1,
-      p {
-        margin-bottom: 1rem;
+    .index-row {
+      .hero-img {
+        div {
+          max-width: 400px !important;
+        }
+      }
+      .hero-bio {
+        text-align: center;
+        h1 {
+          font-size: 1.9rem;
+        }
+        p {
+          width: 100%;
+          font-size: 1rem;
+        }
+
+        .index-cta {
+          width: 100%;
+          font-weight: bold;
+        }
       }
     }
   }
 }
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .index-container {
+    height: 80vh;
+
+    .index-row {
+      .hero-bio {
+        margin: 0;
+
+        h1,
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .index-container {
+    .index-row {
+      flex-wrap: nowrap;
+
+      .hero-img {
+        div {
+          max-width: 280px !important;
+        }
+      }
+
+      .hero-bio {
+        text-align: left;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+
+      .index-cta {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// Navbar style code for landing page
+// display: flex;
+// justify-content: center;
+// height: 100%;
+// align-items: center;
