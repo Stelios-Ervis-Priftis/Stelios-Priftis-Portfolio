@@ -6,9 +6,11 @@ $animate-ease-in-out: all 0.2s ease-in-out;
   background-color: #fff;
   height: 10vh;
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
+  z-index: 1;
 }
 
 .navbarLogo {
@@ -86,9 +88,11 @@ $animate-ease-in-out: all 0.2s ease-in-out;
     background-color: #fff;
     height: 10vh;
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
+    z-index: 1;
   }
 
   .navMenu {
@@ -181,6 +185,7 @@ $animate-ease-in-out: all 0.2s ease-in-out;
   }
 }
 
+/* ----------- iPhone X ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .NavbarItems {
@@ -195,5 +200,19 @@ $animate-ease-in-out: all 0.2s ease-in-out;
 
   .navLinks {
     padding: 2rem 0;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .navMenuActive {
+    .navLinks {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      align-items: center;
+      font-size: 1rem;
+      padding: 1rem 0;
+    }
   }
 }
