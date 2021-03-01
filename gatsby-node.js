@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
+const path = require("path")
+
 exports.onCreatePage = ({ page, actions }) => {
   const { deletePage, createPage } = actions
 
@@ -54,4 +56,18 @@ exports.onCreatePage = ({ page, actions }) => {
 
     resolve()
   })
+}
+
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = path.basename(node.fileAbsolutePath, ".md")
+
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug,
+    })
+  }
 }

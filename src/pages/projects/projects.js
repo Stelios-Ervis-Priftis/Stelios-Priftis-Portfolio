@@ -37,17 +37,19 @@ const Projects_Page = () => {
 
         <Row>
           {data.allMarkdownRemark.edges.map((project, index) => {
+            const { title, techUsed, imgName } = project.node.frontmatter
+            // console.log(project.node.frontmatter)
             return (
               <Col lg={6} key={index} className={projectsStyle.cardContainer}>
                 <Card className={projectsStyle.cardWrapper}>
                   <Image
-                    fileName={project.node.frontmatter.imgName}
+                    fileName={imgName}
                     className={`${projectsStyle.cardImg} rounded`}
                     style={{ width: "300px" }}
                   />
                   <Card.Body className={projectsStyle.cardBody}>
-                    <Card.Title>{project.node.frontmatter.title}</Card.Title>
-                    <Card.Text>{project.node.frontmatter.techUsed}</Card.Text>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>{techUsed}</Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
                 </Card>
