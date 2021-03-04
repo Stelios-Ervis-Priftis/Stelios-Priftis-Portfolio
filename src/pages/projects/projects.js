@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 // Components Import
 import SEO from "../../components/seo"
@@ -23,6 +23,9 @@ const Projects_Page = () => {
               techUsed
               imgName
             }
+            fields {
+              slug
+            }
           }
         }
       }
@@ -38,7 +41,8 @@ const Projects_Page = () => {
         <Row>
           {data.allMarkdownRemark.edges.map((project, index) => {
             const { title, techUsed, imgName } = project.node.frontmatter
-            // console.log(project.node.frontmatter)
+            const { slug } = project.node.fields
+
             return (
               <Col lg={6} key={index} className={projectsStyle.cardContainer}>
                 <Card className={projectsStyle.cardWrapper}>
@@ -50,7 +54,9 @@ const Projects_Page = () => {
                   <Card.Body className={projectsStyle.cardBody}>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{techUsed}</Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Link to={`/projects/${slug}`}>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </Col>
