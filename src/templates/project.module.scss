@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+  //   height: 80vh;
+
+  .project-bio {
+    width: 50%;
+
+    p {
+      a {
+        color: #28df99;
+      }
+    }
+
+    h3:nth-child(9) {
+      margin: 0 0 0.5rem 0;
+    }
+
+    .tech-icons {
+      font-size: 45px;
+
+      svg {
+        margin-right: 1rem;
+      }
+
+      .ic-html5:hover {
+        color: #f06529;
+      }
+      .ic-css:hover {
+        color: #1e90ff;
+      }
+      .ic-js:hover {
+        color: #efd81d;
+      }
+      .ic-babel:hover {
+        color: #f9dc3e;
+      }
+      .ic-webpack:hover {
+        color: #75aecb;
+      }
+      .ic-npm:hover {
+        color: #c40b0a;
+      }
+    }
+  }
+
+  .project-img {
+    .img {
+      max-width: 700px !important;
+      max-height: 700px !important;
+      width: 700px !important;
+      filter: grayscale(100%);
+    }
+
+    .img:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0.8rem;
+    margin-bottom: 1.45rem;
+
+    .project-bio {
+      width: 100%;
+    }
+
+    .project-img {
+      .img {
+        max-width: 349px !important;
+        max-height: 349px !important;
+        width: 349px !important;
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

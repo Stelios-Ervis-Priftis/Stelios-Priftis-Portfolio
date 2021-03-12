@@ -20,8 +20,11 @@ const Projects_Page = () => {
           node {
             frontmatter {
               title
-              techUsed
-              imgName
+              sortBio
+              img {
+                name
+                ext
+              }
             }
             fields {
               slug
@@ -36,26 +39,27 @@ const Projects_Page = () => {
     <Layout>
       <SEO title="Projects" />
       <Container fluid className={projectsStyle.projectsContainer}>
-        <h1 className={projectsStyle.projectTitle}>Projects Page</h1>
+        <h1 className={projectsStyle.projectTitle}>My Projects</h1>
 
         <Row>
           {data.allMarkdownRemark.edges.map((project, index) => {
-            const { title, techUsed, imgName } = project.node.frontmatter
+            const { title, sortBio, img } = project.node.frontmatter
+            const fileImgName = img.name.concat(img.ext)
             const { slug } = project.node.fields
 
             return (
-              <Col lg={6} key={index} className={projectsStyle.cardContainer}>
+              <Col lg={8} key={index} className={projectsStyle.cardContainer}>
                 <Card className={projectsStyle.cardWrapper}>
                   <Image
-                    fileName={imgName}
+                    fileName={fileImgName}
                     className={`${projectsStyle.cardImg} rounded`}
                     style={{ width: "300px" }}
                   />
                   <Card.Body className={projectsStyle.cardBody}>
                     <Card.Title>{title}</Card.Title>
-                    <Card.Text>{techUsed}</Card.Text>
+                    <Card.Text>{sortBio}</Card.Text>
                     <Link to={`/projects/${slug}`}>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">View {title}</Button>
                     </Link>
                   </Card.Body>
                 </Card>

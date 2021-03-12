@@ -1,7 +1,7 @@
 ---
 title: "Random Quote Machine"
-techUsed: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur deleniti saepe quas porro sequi."
-imgName: "hero.jpeg"
+sortBio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur deleniti saepe quas porro sequi."
+img: "random-quote-machine.png"
 ---
 
 # Random Quote Machine
