@@ -18,11 +18,11 @@ const Index_Page = () => {
       <SEO title="Home" />
       <Container fluid className={indexStyles.indexContainer}>
         <Row className={indexStyles.indexRow}>
-          <Col lg="6" className={indexStyles.heroImg}>
+          <Col lg="6" className={indexStyles.heroCol}>
             <Image
               fileName="hero.jpeg"
-              className="rounded-circle"
-              style={{ width: "100%" }}
+              className={`${indexStyles.heroImg} rounded-circle`}
+              style={{ width: "500px" }}
               alt="Hero of the pic"
             />
           </Col>

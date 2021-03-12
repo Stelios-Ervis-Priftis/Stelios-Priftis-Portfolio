@@ -7,7 +7,7 @@ const Image = ({ fileName, className, style, alt }) => {
     query {
       allImageSharp {
         nodes {
-          fluid(maxWidth: 500, maxHeight: 500) {
+          fluid {
             originalName
             ...GatsbyImageSharpFluid
             ...GatsbyImageSharpFluidLimitPresentationSize
