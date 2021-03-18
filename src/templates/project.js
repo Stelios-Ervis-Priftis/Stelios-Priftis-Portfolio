@@ -38,9 +38,11 @@ const Project = props => {
     <Layout>
       <SEO title="Project" />
       <div className={projectStyle.container}>
-        <div className={projectStyle.projectBio}>
-          <div id="test" dangerouslySetInnerHTML={{ __html: html }}></div>
-          {/* <div className={projectStyle.techIcons}>
+        <div
+          className={projectStyle.projectBio}
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
+        {/* <div className={projectStyle.techIcons}>
             <FaHtml5 className={projectStyle.icHtml5} />
             <FaCss3Alt className={projectStyle.icCss} />
             <FaJsSquare className={projectStyle.icJs} />
@@ -48,12 +50,10 @@ const Project = props => {
             <SiWebpack className={projectStyle.icWebpack} />
             <SiNpm className={projectStyle.icNpm} />
           </div> */}
-        </div>
         <div className={projectStyle.projectImg}>
           <Image
             fileName={fileImgName}
             className={`${projectStyle.img} rounded`}
-            style={{ width: "500px" }}
           />
         </div>
       </div>

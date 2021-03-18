@@ -18,7 +18,7 @@ This project is created to put my vanilla JavaScript skills to practice. It is a
 
 Despite the project being introduced in an online course, there is no solution provided by the instructor.
 
-To visit the website, [Click here](http://recipe-app-vanjs.surge.sh/).
+Visit the website, [Click here](http://recipe-app-vanjs.surge.sh/).
 
 ### Used Technologies
 

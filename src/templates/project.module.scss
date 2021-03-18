@@ -3,12 +3,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 0.8rem;
-  //   height: 80vh;
+  height: 80vh;
 
   .project-bio {
     width: 50%;
 
+    h1 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
     p {
+      font-size: 0.9rem;
       a {
         color: #28df99;
       }
@@ -48,9 +57,14 @@
 
   .project-img {
     .img {
-      max-width: 700px !important;
-      max-height: 700px !important;
-      width: 700px !important;
+      // max-width: 700px !important;
+      // max-height: 700px !important;
+      width: 750px;
+      padding: 0.5rem;
+      border: 0.5px solid #ccc;
+      -moz-box-shadow: 0px 6px 10px #ccc;
+      -webkit-box-shadow: 0px 6px 10px #ccc;
+      box-shadow: 0px 6px 10px #ccc;
       filter: grayscale(100%);
     }
 
@@ -60,13 +74,34 @@
   }
 }
 
-/* Portrait */
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 1.45rem;
+    height: 100%;
+  }
+
+  .project-bio {
+    width: 100% !important;
+  }
+
+  .project-img {
+    .img {
+      width: 740px !important;
+      filter: grayscale(0%) !important;
+    }
+  }
+}
+
+/* iPhone X Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .container {
     justify-content: center;
     flex-direction: column;
     padding: 0 0.8rem;
     margin-bottom: 1.45rem;
+    height: 100%;
 
     .project-bio {
       width: 100%;
@@ -74,8 +109,8 @@
 
     .project-img {
       .img {
-        max-width: 349px !important;
-        max-height: 349px !important;
+        // max-width: 349px !important;
+        // max-height: 349px !important;
         width: 349px !important;
         filter: grayscale(0%);
       }
