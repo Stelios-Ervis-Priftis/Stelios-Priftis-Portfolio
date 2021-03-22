@@ -14,7 +14,7 @@ It allows users to create new recipes, add, delete, update necessary ingredients
 
 The app also saves recipes and ingredients thus the user can freely visit the website sometime later and pick up where he/she left.
 
-This project is created to put my vanilla JavaScript skills to practice. It is also the last challenge that is presented in **The Modern JavaScript Bootcamp (2019)** by [Andrew Mead](https://mead.io/) on **Udemy**.
+This project is created to put my vanilla JavaScript skills in practice. It is also the last challenge that is presented in **The Modern JavaScript Bootcamp (2019)** by [Andrew Mead](https://mead.io/) on **Udemy**.
 
 Despite the project being introduced in an online course, there is no solution provided by the instructor.
 

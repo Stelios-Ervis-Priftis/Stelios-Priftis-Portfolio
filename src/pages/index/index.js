@@ -31,7 +31,7 @@ const Index_Page = () => {
             <h1>Hello I'm Stelios</h1>
             <p>
               A motivated and reliable Front End Developer who is looking to
-              grow within a Tech company.
+              grow within a Tech environment.
             </p>
             <p>Need a Developer?</p>
             <Link to="/contact">
