@@ -1,24 +1,123 @@
-.cta-container {
-  .cta-send {
-    border: none;
-    background-color: #28df99;
-    font-weight: bold;
-    margin-right: 1rem;
-    width: 15%;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 
-    &:hover {
-      background-color: darken(#28df99, $amount: 5);
+  .contact-row {
+    width: 100%;
+    align-items: center;
+
+    .form-container {
+      width: 80%;
+
+      .cta-container {
+        display: flex;
+        justify-content: space-between;
+
+        .cta-send {
+          border: none;
+          background-color: #28df99;
+          font-weight: bold;
+          margin-right: 1rem;
+          width: 25%;
+
+          &:hover {
+            background-color: darken(#28df99, $amount: 5);
+          }
+        }
+
+        .cta-clear {
+          border: none;
+          background-color: #ffc107;
+          font-weight: bold;
+          width: 25%;
+
+          &:hover {
+            background-color: darken(#ffc107, $amount: 5);
+          }
+        }
+      }
     }
-  }
 
-  .cta-clear {
-    border: none;
-    background-color: #ffc107;
-    font-weight: bold;
-    width: 15%;
+    .icon-container {
+      display: flex;
+      justify-content: center;
 
-    &:hover {
-      background-color: darken(#ffc107, $amount: 5);
+      svg {
+        color: #343434;
+        font-size: 500px;
+      }
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .contact-container {
+    height: 100%;
+
+    .contact-row {
+      .form-container {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .cta-container {
+          display: flex;
+          justify-content: space-between;
+
+          .cta-send {
+            width: 45%;
+          }
+
+          .cta-clear {
+            width: 45%;
+          }
+        }
+      }
+
+      .icon-container {
+        margin: 2rem 0;
+
+        svg {
+          height: 315px;
+        }
+      }
+    }
+  }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .contact-container {
+    height: 100%;
+
+    .contact-row {
+      .form-container {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .cta-container {
+          display: flex;
+          justify-content: space-between;
+          .cta-send {
+            width: 45%;
+          }
+          .cta-clear {
+            width: 45%;
+          }
+        }
+      }
+
+      .icon-container {
+        svg {
+          height: 315px;
+        }
+      }
+    }
+  }
+}
+
+/* Landscape */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+// }

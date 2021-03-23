@@ -28,7 +28,7 @@ const Index_Page = () => {
           </Col>
 
           <Col lg="6" className={indexStyles.heroBio}>
-            <h1>Hello I'm Stelios</h1>
+            <h1>Hello, I'm Stelios</h1>
             <p>
               A motivated and reliable Front End Developer who is looking to
               grow within a Tech environment.

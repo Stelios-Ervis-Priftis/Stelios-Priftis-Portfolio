@@ -11,35 +11,36 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap"
 import contactStyles from "./contact.module.scss"
 
 // React Icons Import
-import { MdContactMail } from "react-icons/md"
+import { ImMail4 } from "react-icons/im"
 import { RiSendPlaneFill } from "react-icons/ri"
 import { GiBroom } from "react-icons/gi"
 
 const Contact_Page = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Contact Me</h1>
-    <Container fluid>
-      <Row>
+    <Container fluid className={contactStyles.contactContainer}>
+      <Row className={contactStyles.contactRow}>
+        <Col lg={6} className={contactStyles.iconContainer}>
+          <ImMail4 />
+        </Col>
+
         <Col lg={6}>
-          <Form>
+          <Form className={contactStyles.formContainer}>
+            <h1>Contact Me</h1>
             <Row>
               <Col lg={6}>
                 <Form.Group controlId="formBasicFirstName">
-                  <Form.Control type="text" placeholder="First Name Here" />
+                  <Form.Control type="text" placeholder="First Name" />
                 </Form.Group>
               </Col>
               <Col lg={6}>
                 <Form.Group controlId="formBasicLastName">
-                  <Form.Control type="text" placeholder="Last Name Here" />
+                  <Form.Control type="text" placeholder="Last Name" />
                 </Form.Group>
               </Col>
             </Row>
             <Form.Group controlId="formBasicEmail">
-              <Form.Control
-                type="email"
-                placeholder="Email Address Here (example@gmail.com)"
-              />
+              <Form.Control type="email" placeholder="Email Address" />
             </Form.Group>
 
             <Form.Group controlId="formBasicSubject">
@@ -47,7 +48,12 @@ const Contact_Page = () => (
             </Form.Group>
 
             <Form.Group controlId="formBasicTextBody">
-              <Form.Control as="textarea" rows="4" placeholder="Message ..." />
+              <Form.Control
+                as="textarea"
+                rows="4"
+                style={{ resize: "none" }}
+                placeholder="Message ..."
+              />
             </Form.Group>
 
             <div className={contactStyles.ctaContainer}>
@@ -60,10 +66,6 @@ const Contact_Page = () => (
               </Button>
             </div>
           </Form>
-        </Col>
-
-        <Col lg={6}>
-          <MdContactMail style={{ fontSize: "500px" }} />
         </Col>
       </Row>
     </Container>
