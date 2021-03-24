@@ -1,6 +1,6 @@
 ---
 title: "Random Quote Machine"
-sortBio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur deleniti saepe quas porro sequi."
+sortBio: "Generate a random quote!"
 img: "random-quote-machine.png"
 ---
 

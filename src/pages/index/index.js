@@ -12,6 +12,9 @@ import { Container, Row, Col, Button } from "react-bootstrap"
 // Style Import
 import indexStyles from "./index.module.scss"
 
+// React Icons Import
+import { BiMailSend } from "react-icons/bi"
+
 const Index_Page = () => {
   return (
     <Layout>
@@ -35,11 +38,8 @@ const Index_Page = () => {
             </p>
             <p>Need a Developer?</p>
             <Link to="/contact">
-              <Button
-                variant="outline-primary"
-                className={indexStyles.indexCta}
-              >
-                Contact Me
+              <Button className={indexStyles.ctaContact}>
+                Contact <BiMailSend style={{ fontSize: "30px" }} />
               </Button>
             </Link>
           </Col>

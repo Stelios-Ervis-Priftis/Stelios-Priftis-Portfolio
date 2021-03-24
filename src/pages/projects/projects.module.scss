@@ -8,10 +8,13 @@
 
   .card-container {
     margin: 1rem auto;
+    display: flex;
+    justify-content: center;
   }
 
   .card-wrapper {
     flex-direction: row;
+    width: 80%;
   }
 
   .card-img {
@@ -24,14 +27,22 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    // margin-left: 2rem;
+
     div {
       font-size: 1.8rem;
       font-weight: bold;
     }
 
     button {
-      width: 50%;
+      border: none;
+      background-color: #28df99;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 60%;
+
+      &:hover {
+        background-color: darken(#28df99, $amount: 5);
+      }
     }
   }
 }
@@ -41,6 +52,7 @@
   .projects-container {
     .card-wrapper {
       flex-direction: column;
+      width: 100%;
     }
 
     .card-img {

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { MenuItems } from "./menu_item"
 
 // React Bootstrap Style Import
-import "bootstrap/dist/css/bootstrap.min.css"
+// import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from "react-bootstrap"
 
 // Navbar Styles SCSS Import
@@ -13,6 +13,9 @@ import navbarStyles from "./navbar.module.scss"
 
 // React Icons Import
 import { FaBars, FaRegTimesCircle } from "react-icons/fa"
+// import { AiFillCode } from "react-icons/ai"
+// import { AiOutlineCode } from "react-icons/ai"
+import { RiCodeBoxFill } from "react-icons/ri"
 
 const Navbar = () => {
   const [open, toggleHumbugger] = useState(false)
@@ -25,6 +28,9 @@ const Navbar = () => {
       }
     >
       <Link to="/" className={navbarStyles.navbarLogo}>
+        {/* <AiFillCode style={{ fontSize: "40px" }} /> */}
+        {/* <AiOutlineCode style={{ fontSize: "40px" }} /> */}
+        <RiCodeBoxFill />
         <h1>FRONT END DEVELOPER</h1>
       </Link>
 

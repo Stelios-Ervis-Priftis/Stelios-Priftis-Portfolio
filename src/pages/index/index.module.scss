@@ -25,9 +25,16 @@
         width: 80%;
         font-size: 1.2rem;
       }
-      .index-cta {
-        width: 240px;
+      .cta-contact {
+        border: none;
+        background-color: #28df99;
         font-weight: bold;
+        text-transform: uppercase;
+        width: 30%;
+
+        &:hover {
+          background-color: darken(#28df99, $amount: 5);
+        }
       }
     }
   }
@@ -42,6 +49,7 @@
         width: 400px !important;
       }
       .hero-bio {
+        width: 75%;
         text-align: center;
         h1 {
           font-size: 1.9rem;
@@ -51,9 +59,8 @@
           font-size: 1rem;
         }
 
-        .index-cta {
-          width: 100%;
-          font-weight: bold;
+        .cta-contact {
+          width: 60%;
         }
       }
     }
@@ -72,12 +79,17 @@
       }
 
       .hero-bio {
+        width: 100%;
         margin: 0;
 
         h1,
         p {
           margin-bottom: 1rem;
         }
+      }
+
+      .cta-contact {
+        width: 100% !important;
       }
     }
   }
@@ -104,7 +116,8 @@
         }
       }
 
-      .index-cta {
+      .cta-contact {
+        width: 100%;
         font-size: 0.8rem;
       }
     }
