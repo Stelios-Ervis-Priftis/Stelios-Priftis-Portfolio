@@ -28,9 +28,10 @@ const Contact_Page = () => (
           <Form
             className={contactStyles.formContainer}
             name="contact-form"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            netlify
+            // method="post"
+            // data-netlify="true"
+            // data-netlify-honeypot="bot-field"
           >
             <h1>Contact Me</h1>
             <Row>
