@@ -27,36 +27,55 @@ const Contact_Page = () => (
         <Col lg={6}>
           <Form
             className={contactStyles.formContainer}
-            name="contact-form"
             netlify
-            // method="post"
-            // data-netlify="true"
-            // data-netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
+            hidden
           >
             <h1>Contact Me</h1>
             <Row>
               <Col lg={6}>
                 <Form.Group controlId="formBasicFirstName">
-                  <Form.Control type="text" required placeholder="First Name" />
+                  <Form.Control
+                    type="text"
+                    name="first-name"
+                    required
+                    placeholder="First Name"
+                  />
                 </Form.Group>
               </Col>
               <Col lg={6}>
                 <Form.Group controlId="formBasicLastName">
-                  <Form.Control type="text" required placeholder="Last Name" />
+                  <Form.Control
+                    type="text"
+                    name="last-name"
+                    required
+                    placeholder="Last Name"
+                  />
                 </Form.Group>
               </Col>
             </Row>
             <Form.Group controlId="formBasicEmail">
-              <Form.Control type="email" required placeholder="Email Address" />
+              <Form.Control
+                type="email"
+                name="email"
+                required
+                placeholder="Email Address"
+              />
             </Form.Group>
 
             <Form.Group controlId="formBasicSubject">
-              <Form.Control type="text" required placeholder="Subject" />
+              <Form.Control
+                type="text"
+                name="subject"
+                required
+                placeholder="Subject"
+              />
             </Form.Group>
 
             <Form.Group controlId="formBasicTextBody">
               <Form.Control
                 as="textarea"
+                name="text-area"
                 required
                 rows="4"
                 style={{ resize: "none" }}
