@@ -29,7 +29,6 @@ const Contact_Page = () => (
             className={contactStyles.formContainer}
             netlify
             netlify-honeypot="bot-field"
-            hidden
           >
             <h1>Contact Me</h1>
             <Row>
