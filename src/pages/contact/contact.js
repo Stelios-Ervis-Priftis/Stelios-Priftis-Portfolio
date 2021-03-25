@@ -25,31 +25,38 @@ const Contact_Page = () => (
         </Col>
 
         <Col lg={6}>
-          <Form className={contactStyles.formContainer}>
+          <Form
+            className={contactStyles.formContainer}
+            name="contact-form"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
             <h1>Contact Me</h1>
             <Row>
               <Col lg={6}>
                 <Form.Group controlId="formBasicFirstName">
-                  <Form.Control type="text" placeholder="First Name" />
+                  <Form.Control type="text" required placeholder="First Name" />
                 </Form.Group>
               </Col>
               <Col lg={6}>
                 <Form.Group controlId="formBasicLastName">
-                  <Form.Control type="text" placeholder="Last Name" />
+                  <Form.Control type="text" required placeholder="Last Name" />
                 </Form.Group>
               </Col>
             </Row>
             <Form.Group controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Email Address" />
+              <Form.Control type="email" required placeholder="Email Address" />
             </Form.Group>
 
             <Form.Group controlId="formBasicSubject">
-              <Form.Control type="text" placeholder="Subject" />
+              <Form.Control type="text" required placeholder="Subject" />
             </Form.Group>
 
             <Form.Group controlId="formBasicTextBody">
               <Form.Control
                 as="textarea"
+                required
                 rows="4"
                 style={{ resize: "none" }}
                 placeholder="Message ..."
