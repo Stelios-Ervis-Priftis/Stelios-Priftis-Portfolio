@@ -27,6 +27,7 @@ const Contact_Page = () => (
         <Col lg={6}>
           <Form
             className={contactStyles.formContainer}
+            name="contact"
             action="POST"
             data-netlify="true"
           >
