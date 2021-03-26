@@ -27,8 +27,8 @@ const Contact_Page = () => (
         <Col lg={6}>
           <Form
             className={contactStyles.formContainer}
-            netlify
-            netlify-honeypot="bot-field"
+            action="POST"
+            data-netlify="true"
           >
             <h1>Contact Me</h1>
             <Row>
