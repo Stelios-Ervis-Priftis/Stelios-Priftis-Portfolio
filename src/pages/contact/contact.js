@@ -121,7 +121,7 @@ const Contact_Page = () => {
               <Form.Group controlId="formBasicTextBody">
                 <Form.Control
                   as="textarea"
-                  name="textA  rea"
+                  name="textArea"
                   onChange={handleChange}
                   value={formState.textArea}
                   placeholder="Message ..."
