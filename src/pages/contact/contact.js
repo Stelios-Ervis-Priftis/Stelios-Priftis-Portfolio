@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import emailjs from "emailjs-com"
 
 // Components Import
 import Layout from "../../components/layout/layout"
@@ -16,36 +17,59 @@ import { RiSendPlaneFill } from "react-icons/ri"
 import { GiBroom } from "react-icons/gi"
 
 const Contact_Page = () => {
-  const [formState, setFormState] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    textArea: "",
-  })
+  // const [formState, setFormState] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   subject: "",
+  //   textArea: "",
+  // })
 
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
+  // const encode = data => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&")
+  // }
 
-  const handleChange = e => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    })
-    console.log("e", e)
-  }
+  // const handleChange = e => {
+  //   setFormState({
+  //     ...formState,
+  //     [e.target.name]: e.target.value,
+  //   })
+  // }
 
-  const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formState }),
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error))
+  // const handleSubmit = e => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...formState }),
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error))
+
+  //   e.preventDefault()
+  // }
+
+  const handleSendEmail = e => {
+    const resetForm = e.target
+
+    emailjs
+      .sendForm(
+        "gmail_xj3wxl7",
+        "Conform_template_7r86ry9",
+        e.target,
+        "user_maJb1cUj2C394Kh7Sk8nB"
+      )
+      .then(
+        result => {
+          alert(result.text)
+          resetForm.reset()
+        },
+        error => {
+          alert(error.text)
+          resetForm.reset()
+        }
+      )
 
     e.preventDefault()
   }
@@ -62,6 +86,58 @@ const Contact_Page = () => {
           <Col lg={6}>
             <Form
               className={contactStyles.formContainer}
+              onSubmit={handleSendEmail}
+            >
+              <h1>Contact Me</h1>
+              <Form.Group>
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Control
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group>
+                <Form.Control
+                  as="textarea"
+                  name="message"
+                  placeholder="Message ..."
+                  rows="4"
+                  style={{ resize: "none" }}
+                  required
+                />
+              </Form.Group>
+
+              <div className={contactStyles.ctaContainer}>
+                <Button className={contactStyles.ctaSend} type="submit">
+                  SEND <RiSendPlaneFill />
+                </Button>
+
+                <Button className={contactStyles.ctaClear} type="reset">
+                  CLEAR <GiBroom />
+                </Button>
+              </div>
+            </Form>
+            {/* <Form
+              className={contactStyles.formContainer}
               onSubmit={handleSubmit}
               name="contact"
               method="post"
@@ -70,32 +146,16 @@ const Contact_Page = () => {
             >
               <input type="hidden" name="form-name" value="contact" />
               <h1>Contact Me</h1>
-              <Row>
-                <Col lg={6}>
-                  <Form.Group controlId="formBasicFirstName">
-                    <Form.Control
-                      type="text"
-                      name="firstName"
-                      onChange={handleChange}
-                      value={formState.firstName}
-                      placeholder="First Name"
-                      required
-                    />
-                  </Form.Group>
-                </Col>
-                <Col lg={6}>
-                  <Form.Group controlId="formBasicLastName">
-                    <Form.Control
-                      type="text"
-                      name="lastName"
-                      onChange={handleChange}
-                      value={formState.lastName}
-                      placeholder="Last Name"
-                      required
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
+              <Form.Group controlId="formBasicFirstName">
+                <Form.Control
+                  type="text"
+                  name="firstName"
+                  onChange={handleChange}
+                  value={formState.firstName}
+                  placeholder="Full Name"
+                  required
+                />
+              </Form.Group>
               <Form.Group controlId="formBasicEmail">
                 <Form.Control
                   type="email"
@@ -103,17 +163,6 @@ const Contact_Page = () => {
                   onChange={handleChange}
                   value={formState.email}
                   placeholder="Email Address"
-                  required
-                />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicSubject">
-                <Form.Control
-                  type="text"
-                  name="subject"
-                  onChange={handleChange}
-                  value={formState.subject}
-                  placeholder="Subject"
                   required
                 />
               </Form.Group>
@@ -140,7 +189,7 @@ const Contact_Page = () => {
                   CLEAR <GiBroom />
                 </Button>
               </div>
-            </Form>
+            </Form> */}
           </Col>
         </Row>
       </Container>

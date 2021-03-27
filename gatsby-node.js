@@ -55,6 +55,19 @@ exports.onCreatePage = ({ page, actions }) => {
     }
 
     resolve()
+
+    // if the page component is the success page component
+    if (page.componentPath === `${__dirname}/src/pages/success/success.js`) {
+      deletePage(page)
+
+      // create a new page but with '/' as path
+      createPage({
+        ...page,
+        path: "/success",
+      })
+    }
+
+    resolve()
   })
 }
 
