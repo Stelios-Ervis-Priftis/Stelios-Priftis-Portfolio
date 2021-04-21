@@ -4,12 +4,11 @@ $animate-ease-in-out: all 0.5s ease-in-out;
   background-color: #343434;
   color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 10vh;
   .icons {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 
     a {
       color: #fff;
@@ -28,6 +27,7 @@ $animate-ease-in-out: all 0.5s ease-in-out;
     }
   }
   p {
+    font-size: 0.8rem;
     margin: 0;
     padding: 0;
     text-transform: uppercase;

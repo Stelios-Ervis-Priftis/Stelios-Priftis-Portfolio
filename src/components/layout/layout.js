@@ -7,6 +7,9 @@ import Footer from "../footer/footer"
 // External Style Import
 import "bootstrap/dist/css/bootstrap.min.css"
 
+// Animated Css Import
+import "animate.css"
+
 // Sass Starter Style Import
 import "../../styles/index.scss"
 

@@ -14,6 +14,7 @@ import indexStyles from "./index.module.scss"
 
 // React Icons Import
 import { BiMailSend } from "react-icons/bi"
+import { TiArrowRightThick } from "react-icons/ti"
 
 const Index_Page = () => {
   return (
@@ -25,7 +26,7 @@ const Index_Page = () => {
             <Image
               fileName="hero.jpeg"
               className={`${indexStyles.heroImg} rounded-circle`}
-              style={{ width: "500px" }}
+              style={{ width: "400px" }}
               alt="Hero of the pic"
             />
           </Col>
@@ -36,12 +37,23 @@ const Index_Page = () => {
               A motivated and reliable Front End Developer who is looking to
               grow within a Tech environment.
             </p>
-            <p>Need a Developer?</p>
+            {/* <div className={indexStyles.ctaContainer}> */}
+            {/* <p>Need a Developer?</p> */}
             <Link to="/contact">
               <Button className={indexStyles.ctaContact}>
-                Contact <BiMailSend style={{ fontSize: "30px" }} />
+                Need a Developer?
+                {/* <TiArrowRightThick
+                  className="animate__animated animate__lightSpeedInLeft animate__slow animate__infinite"
+                  variant="primary"
+                  style={{ fontSize: "20px" }}
+                /> */}
+                <BiMailSend
+                  className="animate__animated animate__pulse animate__fast animate__infinite"
+                  style={{ fontSize: "30px" }}
+                />
               </Button>
             </Link>
+            {/* </div> */}
           </Col>
         </Row>
       </Container>

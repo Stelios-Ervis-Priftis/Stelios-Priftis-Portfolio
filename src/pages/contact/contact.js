@@ -17,39 +17,6 @@ import { RiSendPlaneFill } from "react-icons/ri"
 import { GiBroom } from "react-icons/gi"
 
 const Contact_Page = () => {
-  // const [formState, setFormState] = useState({
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   subject: "",
-  //   textArea: "",
-  // })
-
-  // const encode = data => {
-  //   return Object.keys(data)
-  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //     .join("&")
-  // }
-
-  // const handleChange = e => {
-  //   setFormState({
-  //     ...formState,
-  //     [e.target.name]: e.target.value,
-  //   })
-  // }
-
-  // const handleSubmit = e => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...formState }),
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error))
-
-  //   e.preventDefault()
-  // }
-
   const handleSendEmail = e => {
     const resetForm = e.target
 
@@ -136,60 +103,6 @@ const Contact_Page = () => {
                 </Button>
               </div>
             </Form>
-            {/* <Form
-              className={contactStyles.formContainer}
-              onSubmit={handleSubmit}
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <h1>Contact Me</h1>
-              <Form.Group controlId="formBasicFirstName">
-                <Form.Control
-                  type="text"
-                  name="firstName"
-                  onChange={handleChange}
-                  value={formState.firstName}
-                  placeholder="Full Name"
-                  required
-                />
-              </Form.Group>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Control
-                  type="email"
-                  name="email"
-                  onChange={handleChange}
-                  value={formState.email}
-                  placeholder="Email Address"
-                  required
-                />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicTextBody">
-                <Form.Control
-                  as="textarea"
-                  name="textArea"
-                  onChange={handleChange}
-                  value={formState.textArea}
-                  placeholder="Message ..."
-                  rows="4"
-                  style={{ resize: "none" }}
-                  required
-                />
-              </Form.Group>
-
-              <div className={contactStyles.ctaContainer}>
-                <Button className={contactStyles.ctaSend} type="submit">
-                  SEND <RiSendPlaneFill />
-                </Button>
-
-                <Button className={contactStyles.ctaClear} type="reset">
-                  CLEAR <GiBroom />
-                </Button>
-              </div>
-            </Form> */}
           </Col>
         </Row>
       </Container>

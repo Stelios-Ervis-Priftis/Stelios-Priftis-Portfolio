@@ -42,14 +42,6 @@ const Project = props => {
           className={projectStyle.projectBio}
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
-        {/* <div className={projectStyle.techIcons}>
-            <FaHtml5 className={projectStyle.icHtml5} />
-            <FaCss3Alt className={projectStyle.icCss} />
-            <FaJsSquare className={projectStyle.icJs} />
-            <SiBabel className={projectStyle.icBabel} />
-            <SiWebpack className={projectStyle.icWebpack} />
-            <SiNpm className={projectStyle.icNpm} />
-          </div> */}
         <div className={projectStyle.projectImg}>
           <Image
             fileName={fileImgName}

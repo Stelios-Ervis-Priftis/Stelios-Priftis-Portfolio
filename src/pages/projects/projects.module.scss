@@ -1,70 +1,232 @@
-.projects-container {
+// .projects-container {
+//   display: flex;
+//   flex-direction: column;
+
+//   .project-title {
+//     text-align: center;
+//   }
+
+//   .card-container {
+//     margin: 1rem auto;
+//     display: flex;
+//     justify-content: center;
+//   }
+
+//   .card-wrapper {
+//     flex-direction: row;
+//     width: 80%;
+//   }
+
+//   .card-img {
+//     width: 400px !important;
+//     height: 400px !important;
+//   }
+
+//   .card-body {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     width: 50%;
+
+//     div {
+//       font-size: 1.8rem;
+//       font-weight: bold;
+//     }
+
+//     button {
+//       border: none;
+//       background-color: #28df99;
+//       font-weight: bold;
+//       text-tranm: uppercase;
+//       width: 60%;
+
+//       &:hover {
+//         background-color: darken(#28df99, $amount: 5);
+//       }
+//     }
+//   }
+// }
+
+// /* Portrait */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+//   .projects-container {
+//     .card-wrapper {
+//       flex-direction: column;
+//       width: 100%;
+//     }
+
+//     .card-img {
+//       width: 100% !important;
+//     }
+
+//     .card-body {
+//       width: 100%;
+
+//       button {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// Styling general section
+section {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  // background-color: #fff !important;
+  // color: #000 !important;
+  // border-bottom: 1px solid #0f0e0e;
 
-  .project-title {
-    text-align: center;
-  }
-
-  .card-container {
-    margin: 1rem auto;
+  .browser {
     display: flex;
-    justify-content: center;
-  }
-
-  .card-wrapper {
-    flex-direction: row;
-    width: 80%;
-  }
-
-  .card-img {
-    width: 400px !important;
-    height: 400px !important;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-
-    div {
-      font-size: 1.8rem;
-      font-weight: bold;
+    position: absolute;
+    margin: 1rem 0;
+    span {
+      margin: 0 0.4rem;
     }
+    .close {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: #ff605c;
+      // position: relative;
+      // top: 12%;
+      // left: 1%;
+    }
+    .minimize {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: #ffbd44;
+      // position: relative;
+      // top: 12%;
+      // left: 1%;
+    }
+    .maximize {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: #00ca4e;
+      // position: relative;
+      // top: 12%;
+      // left: 1%;
+    }
+  }
 
-    button {
-      border: none;
-      background-color: #28df99;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 60%;
+  .frame {
+    position: fixed;
+    right: 104px;
+    top: 251px;
+    width: 449px;
+    height: 272px;
+    border: 0.3rem double #0f0e0e;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 0px #000;
+  }
 
-      &:hover {
-        background-color: darken(#28df99, $amount: 5);
+  // Styling general containers
+  .bio-col {
+    display: flex;
+    align-items: center;
+
+    .bio-container {
+      div {
+        display: flex;
+        // justify-content: space-between;
+
+        svg {
+          color: #fff;
+          font-size: 2.5rem;
+          margin-left: 5rem;
+          margin-bottom: 1.45rem;
+        }
       }
+    }
+  }
+
+  // Styling general containers
+  .image-container {
+    .cardImg {
+      width: 100%;
+      background-position: right 109px top 256px;
+      background-size: 439px 262px;
     }
   }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .projects-container {
-    .card-wrapper {
-      flex-direction: column;
-      width: 100%;
-    }
+// Styling individual section
+.hangman {
+  color: #fff;
+  background: #6f6977;
+  height: 100vh;
 
-    .card-img {
-      width: 100% !important;
-    }
+  .bio-container {
+    // margin-bottom: 10.4rem;
+  }
 
-    .card-body {
-      width: 100%;
+  .cardImg {
+    background-image: url(../../posts/projects/hangman-game/hangman-game.png);
+    background-attachment: fixed !important;
+    width: 540px;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+}
 
-      button {
-        width: 100%;
-      }
-    }
+.indecision {
+  color: #fff;
+  background: #90cba4;
+
+  .cardImg {
+    background-image: url(../../posts/projects/indecision-app/indecision-app.png);
+    background-attachment: fixed !important;
+    width: 540px;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+}
+
+.quoteMachine {
+  color: #fff;
+  background: #f7d1d1;
+
+  .cardImg {
+    background-image: url(../../posts/projects/random-quote-machine/random-quote-machine.png);
+    background-attachment: fixed !important;
+    width: 540px;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+}
+
+.recipe {
+  color: #fff;
+  background: #89b1d1;
+
+  .cardImg {
+    background-image: url(../../posts/projects/recipe-app/recipe-app.png);
+    background-attachment: fixed !important;
+    width: 540px;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+}
+
+.todo {
+  color: #fff;
+  background: #a37ec9;
+  border-bottom: none;
+
+  .bio-container {
+    // margin-top: 133.4px;
+  }
+
+  .cardImg {
+    background-image: url(../../posts/projects/todo-app/todo-app.png);
+    background-attachment: fixed !important;
+    width: 540px;
+    height: 100vh;
+    background-repeat: no-repeat;
   }
 }

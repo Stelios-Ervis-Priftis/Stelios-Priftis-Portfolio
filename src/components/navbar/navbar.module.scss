@@ -19,11 +19,11 @@ $animate-ease-in-out: all 0.2s ease-in-out;
   cursor: pointer;
 
   svg {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin: 0;
     margin-left: 7px;
     padding: 0;
@@ -41,7 +41,7 @@ $animate-ease-in-out: all 0.2s ease-in-out;
 }
 
 .navMenu {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 2rem;
@@ -54,8 +54,9 @@ $animate-ease-in-out: all 0.2s ease-in-out;
 }
 
 .navLinks {
-  padding: 0 0.8rem;
-  font-size: 1.3rem;
+  // padding: 0 0.8rem;
+  // font-size: 1.3rem;
+  padding: 0.8rem;
   transition: $animate-ease-in-out;
 
   &:after {

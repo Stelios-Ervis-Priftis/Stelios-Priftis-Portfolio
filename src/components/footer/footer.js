@@ -1,6 +1,9 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
+// React Bootstrap Style Import
+import { Container } from "react-bootstrap"
+
 // Footer Styles SCSS Import
 import footerStyles from "./footer.module.scss"
 
@@ -18,7 +21,13 @@ const Footer = () => {
     }
   `)
   return (
-    <div className={footerStyles.container}>
+    <Container fluid className={footerStyles.container}>
+      <div className={footerStyles.copyright}>
+        <p>
+          CREATED BY {data.site.siteMetadata.author} ©{new Date().getFullYear()}
+        </p>
+      </div>
+
       <div className={footerStyles.icons}>
         <a href="https://github.com/Stelios-Ervis-Priftis" target="#">
           <FaGithub />
@@ -31,13 +40,7 @@ const Footer = () => {
           <FaInstagram />
         </a>
       </div>
-
-      <div className={footerStyles.copyright}>
-        <p>
-          CREATED BY {data.site.siteMetadata.author} ©{new Date().getFullYear()}
-        </p>
-      </div>
-    </div>
+    </Container>
   )
 }
 

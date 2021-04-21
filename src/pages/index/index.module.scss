@@ -18,24 +18,37 @@
     .hero-bio {
       margin: auto;
       h1 {
-        font-size: 3.3rem;
+        font-size: 2.3rem;
       }
 
       p {
-        width: 80%;
-        font-size: 1.2rem;
+        width: 70%;
+        font-size: 0.8rem;
       }
+      // .cta-container {
+      // display: flex;
+      // align-items: center;
+      // p {
+      //   margin: 0;
+      //   width: 50%;
+      //   font-size: 0.8rem;
+      // }
       .cta-contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         border: none;
         background-color: #28df99;
+        font-size: 0.8rem;
         font-weight: bold;
         text-transform: uppercase;
-        width: 30%;
-
+        width: 38%;
+        height: 35px;
         &:hover {
           background-color: darken(#28df99, $amount: 5);
         }
       }
+      // }
     }
   }
 }

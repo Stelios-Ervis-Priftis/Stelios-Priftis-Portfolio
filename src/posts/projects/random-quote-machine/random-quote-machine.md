@@ -1,7 +1,8 @@
 ---
-title: "Random Quote Machine"
+title: "Quote Machine"
 sortBio: "Generate a random quote!"
 img: "random-quote-machine.png"
+cssClass: "quoteMachine"
 ---
 
 # Random Quote Machine

@@ -2,6 +2,7 @@
 title: "Hangman Game"
 sortBio: "Play a beloved childhood game Hangman in the web!"
 img: "hangman-game.png"
+cssClass: "hangman"
 ---
 
 # Hangman Game

@@ -2,6 +2,7 @@
 title: "Indecision App"
 sortBio: "Struggling to take a decision? No more... Put your life in the hands of a computer!"
 img: "indecision-app.png"
+cssClass: "indecision"
 ---
 
 # Indecision App

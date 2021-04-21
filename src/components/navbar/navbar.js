@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import { MenuItems } from "./menu_item"
 
 // React Bootstrap Style Import
-// import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from "react-bootstrap"
 
 // Navbar Styles SCSS Import
