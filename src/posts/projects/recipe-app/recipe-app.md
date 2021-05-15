@@ -1,8 +1,10 @@
 ---
-title: "Recipe App"
-sortBio: "Create your recipes, add ingredients, visit them whenever you need!"
-img: "recipe-app.png"
-cssClass: "recipe"
+title: 'Recipe App'
+sortBio: 'Create your recipes, add ingredients, visit them whenever you need!'
+img: 'recipe-app.png'
+cssClass: 'recipe'
+date: '14-5-2021'
+notPublished: false
 ---
 
 # Recipe App

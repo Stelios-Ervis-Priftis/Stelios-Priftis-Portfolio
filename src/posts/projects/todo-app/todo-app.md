@@ -1,8 +1,10 @@
 ---
-title: "Todo App"
-sortBio: "Take a chances to not miss any to-do from your schedule!"
-img: "todo-app.png"
-cssClass: "todo"
+title: 'Todo App'
+sortBio: 'Take a chances to not miss any to-do from your schedule!'
+img: 'todo-app.png'
+cssClass: 'todo'
+date: '12-5-2021'
+notPublished: false
 ---
 
 # Todo App

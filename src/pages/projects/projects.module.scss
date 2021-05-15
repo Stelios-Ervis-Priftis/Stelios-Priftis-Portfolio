@@ -71,162 +71,162 @@
 
 // Styling general section
 section {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  // background-color: #fff !important;
-  // color: #000 !important;
-  // border-bottom: 1px solid #0f0e0e;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	// background-color: #fff !important;
+	// color: #000 !important;
+	// border-bottom: 1px solid #0f0e0e;
 
-  .browser {
-    display: flex;
-    position: absolute;
-    margin: 1rem 0;
-    span {
-      margin: 0 0.4rem;
-    }
-    .close {
-      width: 15px;
-      height: 15px;
-      border-radius: 100%;
-      background-color: #ff605c;
-      // position: relative;
-      // top: 12%;
-      // left: 1%;
-    }
-    .minimize {
-      width: 15px;
-      height: 15px;
-      border-radius: 100%;
-      background-color: #ffbd44;
-      // position: relative;
-      // top: 12%;
-      // left: 1%;
-    }
-    .maximize {
-      width: 15px;
-      height: 15px;
-      border-radius: 100%;
-      background-color: #00ca4e;
-      // position: relative;
-      // top: 12%;
-      // left: 1%;
-    }
-  }
+	.browser {
+		display: flex;
+		position: absolute;
+		margin: 1rem 0;
+		span {
+			margin: 0 0.4rem;
+		}
+		.close {
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			background-color: #ff605c;
+			// position: relative;
+			// top: 12%;
+			// left: 1%;
+		}
+		.minimize {
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			background-color: #ffbd44;
+			// position: relative;
+			// top: 12%;
+			// left: 1%;
+		}
+		.maximize {
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			background-color: #00ca4e;
+			// position: relative;
+			// top: 12%;
+			// left: 1%;
+		}
+	}
 
-  .frame {
-    position: fixed;
-    right: 104px;
-    top: 251px;
-    width: 449px;
-    height: 272px;
-    border: 0.3rem double #0f0e0e;
-    border-radius: 0.5rem;
-    box-shadow: 5px 5px 0px #000;
-  }
+	.frame {
+		position: fixed;
+		right: 104px;
+		top: 251px;
+		width: 449px;
+		height: 272px;
+		border: 0.3rem double #0f0e0e;
+		border-radius: 0.5rem;
+		box-shadow: 5px 5px 0px #000;
+	}
 
-  // Styling general containers
-  .bio-col {
-    display: flex;
-    align-items: center;
+	// Styling general containers
+	.bio-col {
+		display: flex;
+		align-items: center;
 
-    .bio-container {
-      div {
-        display: flex;
-        // justify-content: space-between;
+		.bio-container {
+			div {
+				display: flex;
+				// justify-content: space-between;
 
-        svg {
-          color: #fff;
-          font-size: 2.5rem;
-          margin-left: 5rem;
-          margin-bottom: 1.45rem;
-        }
-      }
-    }
-  }
+				svg {
+					color: #fff;
+					font-size: 2.5rem;
+					margin-left: 5rem;
+					margin-bottom: 1.45rem;
+				}
+			}
+		}
+	}
 
-  // Styling general containers
-  .image-container {
-    .cardImg {
-      width: 100%;
-      background-position: right 109px top 256px;
-      background-size: 439px 262px;
-    }
-  }
+	// Styling general containers
+	.image-container {
+		.cardImg {
+			width: 100%;
+			background-position: right 109px top 256px;
+			background-size: 439px 262px;
+		}
+	}
 }
 
 // Styling individual section
 .hangman {
-  color: #fff;
-  background: #6f6977;
-  height: 100vh;
+	color: #fff;
+	background: #6f6977;
+	height: 100vh;
 
-  .bio-container {
-    // margin-bottom: 10.4rem;
-  }
+	.bio-container {
+		// margin-bottom: 10.4rem;
+	}
 
-  .cardImg {
-    background-image: url(../../posts/projects/hangman-game/hangman-game.png);
-    background-attachment: fixed !important;
-    width: 540px;
-    height: 100vh;
-    background-repeat: no-repeat;
-  }
+	.cardImg {
+		background-image: url(../../posts/projects/hangman-game/hangman-game.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
 }
 
 .indecision {
-  color: #fff;
-  background: #90cba4;
+	color: #fff;
+	background: #90cba4;
 
-  .cardImg {
-    background-image: url(../../posts/projects/indecision-app/indecision-app.png);
-    background-attachment: fixed !important;
-    width: 540px;
-    height: 100vh;
-    background-repeat: no-repeat;
-  }
+	.cardImg {
+		background-image: url(../../posts/projects/indecision-app/indecision-app.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
 }
 
 .quoteMachine {
-  color: #fff;
-  background: #f7d1d1;
+	color: #fff;
+	background: #f7d1d1;
 
-  .cardImg {
-    background-image: url(../../posts/projects/random-quote-machine/random-quote-machine.png);
-    background-attachment: fixed !important;
-    width: 540px;
-    height: 100vh;
-    background-repeat: no-repeat;
-  }
+	.cardImg {
+		background-image: url(../../posts/projects/random-quote-machine/random-quote-machine.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
 }
 
 .recipe {
-  color: #fff;
-  background: #89b1d1;
+	color: #fff;
+	background: #89b1d1;
 
-  .cardImg {
-    background-image: url(../../posts/projects/recipe-app/recipe-app.png);
-    background-attachment: fixed !important;
-    width: 540px;
-    height: 100vh;
-    background-repeat: no-repeat;
-  }
+	.cardImg {
+		background-image: url(../../posts/projects/recipe-app/recipe-app.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
 }
 
 .todo {
-  color: #fff;
-  background: #a37ec9;
-  border-bottom: none;
+	color: #fff;
+	background: #a37ec9;
+	border-bottom: none;
 
-  .bio-container {
-    // margin-top: 133.4px;
-  }
+	.bio-container {
+		// margin-top: 133.4px;
+	}
 
-  .cardImg {
-    background-image: url(../../posts/projects/todo-app/todo-app.png);
-    background-attachment: fixed !important;
-    width: 540px;
-    height: 100vh;
-    background-repeat: no-repeat;
-  }
+	.cardImg {
+		background-image: url(../../posts/projects/todo-app/todo-app.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
 }

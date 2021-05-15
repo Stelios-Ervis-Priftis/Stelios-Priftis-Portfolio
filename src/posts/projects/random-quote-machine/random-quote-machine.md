@@ -1,8 +1,10 @@
 ---
-title: "Quote Machine"
-sortBio: "Generate a random quote!"
-img: "random-quote-machine.png"
-cssClass: "quoteMachine"
+title: 'Quote Machine'
+sortBio: 'Generate a random quote!'
+img: 'random-quote-machine.png'
+cssClass: 'quoteMachine'
+date: '13-5-2021'
+notPublished: false
 ---
 
 # Random Quote Machine

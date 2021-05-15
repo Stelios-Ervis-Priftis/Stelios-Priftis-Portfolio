@@ -1,8 +1,10 @@
 ---
-title: "Indecision App"
-sortBio: "Struggling to take a decision? No more... Put your life in the hands of a computer!"
-img: "indecision-app.png"
-cssClass: "indecision"
+title: 'Indecision App'
+sortBio: 'Struggling to take a decision? No more... Put your life in the hands of a computer!'
+img: 'indecision-app.png'
+cssClass: 'indecision'
+date: '15-5-2021'
+notPublished: false
 ---
 
 # Indecision App
@@ -15,8 +17,7 @@ It allows the users to add as many options as they want, to delete one that does
 
 No more arguments on which movie or series should you watch tonight.
 
-This project was created for educational purposes while I enrolled in React course.
-It is one of the projects that is presented in **The Complete React Developer Course (w/ Hooks and Redux)** by [Andrew Mead](https://mead.io/) on **Udemy**.
+This project was created for educational purposes while I enrolled in React course. It is one of the projects that is presented in **The Complete React Developer Course (w/ Hooks and Redux)** by [Andrew Mead](https://mead.io/) on **Udemy**.
 
 Despite the project being introduced in an online course that is guided by the tutor, there where a tone of challenges. The end results, that you can see in the **Indecision App**, such as styling, from third party library's choices and some additional functionalities where my own personal practices and curiosities that occurred during the tutoring of the course on the subject introduction in React.
 
