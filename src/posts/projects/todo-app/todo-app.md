@@ -19,7 +19,7 @@ The app also saves the to-dos thus use can freely visit the website sometime lat
 
 This project is created to put my vanilla JavaScript skills in practice. It is also one of the guided full of challenges projects that is presented in **The Modern JavaScript Bootcamp (2019)** by [Andrew Mead](https://mead.io/) on **Udemy**.
 
-To visit the website, [Click here](http://todo-app-vanjs.surge.sh/).
+To visit the website, [Click here](https://todo-app-van-js.vercel.app/).
 
 ### Used Technologies
 

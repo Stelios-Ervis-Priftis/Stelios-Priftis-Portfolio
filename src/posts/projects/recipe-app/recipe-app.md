@@ -21,7 +21,7 @@ This project is created to put my vanilla JavaScript skills in practice. It is a
 
 Despite the project being introduced in an online course, there is no solution provided by the instructor.
 
-Visit the website, [Click here](http://recipe-app-vanjs.surge.sh/).
+Visit the website, [Click here](https://recipe-app-van-js.vercel.app/).
 
 ### Used Technologies
 
