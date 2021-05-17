@@ -7,9 +7,7 @@ date: '11-5-2021'
 notPublished: false
 ---
 
-# Hangman Game
-
-### General Info
+### Description
 
 A well known paper and pencil drowning game in an web version that is created entirely with vanilla Javascript.
 

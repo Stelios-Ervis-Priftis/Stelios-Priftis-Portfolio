@@ -1,71 +1,165 @@
-.about-container {
-  display: flex;
-  justify-content: space-between;
+.about-section {
+	display: flex;
+	align-items: center;
+	height: 90vh;
 
-  .aboutBio {
-    color: #fff;
-    background-color: #343434;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 48%;
-    p {
-      font-size: 0.8rem;
-    }
-  }
+	.about-container {
+		display: flex;
+		justify-content: space-between;
 
-  .about-skills {
-    color: #000;
-    border: 1px solid #343434;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 48%;
+		.aboutBio {
+			// color: #fff;
+			// background-color: #343434;
+			border-radius: 1rem;
+			padding: 1rem;
+			width: 48%;
 
-    .skill-icons {
-      display: flex;
-      flex-direction: row;
+			h2 {
+				font-size: 1.5rem;
+			}
 
-      .tech-icons {
-        display: flex;
-        flex-direction: column;
-        font-size: 45px;
-        width: 50%;
+			p {
+				font-size: 0.8rem;
+			}
+		}
 
-        .techIcon {
-          display: flex;
-          margin-bottom: 1rem;
-        }
+		.about-skills {
+			// color: #000;
+			// border: 1px solid #343434;
+			// border-radius: 1rem;
+			padding: 1rem;
+			width: 48%;
 
-        .progress-bar {
-          width: 100%;
-          margin-left: 0.5rem;
-          div {
-            color: red;
-            font-size: 1.1rem;
-          }
-        }
+			.skill-icons {
+				display: flex;
+				flex-direction: row;
 
-        .ic-html5 {
-          color: #f06529;
-        }
-        .ic-css {
-          color: #1e90ff;
-        }
-        .ic-js {
-          color: #efd81d;
-        }
-        .ic-babel {
-          color: #f9dc3e;
-        }
-        .ic-webpack {
-          color: #75aecb;
-        }
-        .ic-npm {
-          color: #c40b0a;
-        }
-      }
-    }
-  }
+				h2 {
+					font-size: 1.4rem;
+				}
 
-  .about-hobbies {
-  }
+				h3 {
+					font-size: 1rem;
+				}
+
+				.tech-icons {
+					display: flex;
+					flex-direction: column;
+					font-size: 45px;
+					width: 50%;
+
+					.tech-icon {
+						font-size: 2rem;
+						display: flex;
+						margin-bottom: 1rem;
+					}
+
+					.progress-bar {
+						width: 100%;
+						margin-left: 0.5rem;
+						div {
+							color: red;
+							font-size: 1.1rem;
+						}
+					}
+
+					.ic-html5 {
+						color: #f06529;
+					}
+					.ic-css {
+						color: #1e90ff;
+					}
+					.ic-js {
+						color: #efd81d;
+					}
+					.ic-babel {
+						color: #f9dc3e;
+					}
+					.ic-webpack {
+						color: #75aecb;
+					}
+					.ic-npm {
+						color: #c40b0a;
+					}
+				}
+			}
+		}
+	}
+}
+
+.hobbies-container {
+	h1 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.windsurfing-row,
+	.snowboarder-row,
+	.bartending-row {
+		margin: 3rem 0;
+	}
+
+	.windsurfing-container,
+	.bartending-container {
+		display: flex;
+		justify-content: end;
+
+		.windsurfing-hero,
+		.bartending-hero {
+			box-shadow: -70px 0px 0px #000;
+		}
+	}
+
+	.windsurfing-bio,
+	.bartending-bio {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		border: 1px solid black;
+		padding: 0rem 1rem;
+		border-radius: 1rem;
+		box-shadow: 5px -3px 0px #000;
+
+		h1 {
+			font-size: 1.4rem;
+			margin: 1rem 0;
+			text-align: start;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
+	}
+
+	.snowboarder-container {
+		display: flex;
+		justify-content: start;
+
+		.snowboarder-hero {
+			box-shadow: 70px 0px 0px #000;
+		}
+	}
+
+	.snowboarder-bio {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: start;
+		height: 100%;
+		border: 1px solid black;
+		padding: 0 1rem;
+		border-radius: 1rem;
+		box-shadow: -5px -3px 0px #000;
+
+		h1 {
+			font-size: 1.4rem;
+			margin: 1rem 0;
+			text-align: start;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
+	}
 }

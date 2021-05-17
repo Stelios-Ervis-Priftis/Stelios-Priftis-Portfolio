@@ -7,9 +7,7 @@ date: '14-5-2021'
 notPublished: false
 ---
 
-# Recipe App
-
-### General Info
+### Description
 
 Recipe App is a basic CRUD (Create-Retrieve-Update-Delete) application that is created entirely with vanilla JavaScript.
 

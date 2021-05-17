@@ -7,9 +7,7 @@ date: '12-5-2021'
 notPublished: false
 ---
 
-# Todo App
-
-### General Info
+### Description
 
 Todo App is a classic tracker that list things that you need toto the application is created entirely with vanilla JavaScript.
 

@@ -7,11 +7,9 @@ date: '15-5-2021'
 notPublished: false
 ---
 
-# Indecision App
+### Description
 
-### General Info
-
-Indecision is a web app that helps you make a decision and randomly choose one of the given options for you.
+Indecision is a web app that helps you make a decision and randomly choose, from one of the given options for you.
 
 It allows the users to add as many options as they want, to delete one that doesn't meet the purpose or delete all them off and start listing new options. When you list all the options you want, you just press the button COMPUTER TAKE DECISION and voilà!
 

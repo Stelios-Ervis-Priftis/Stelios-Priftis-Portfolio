@@ -4,7 +4,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 // Components Import
 import SEO from '../../components/seo';
 import Layout from '../../components/layout/layout';
-import Image from '../../components/image';
+// import Image from '../../components/image';
 
 // React Bootstrap Import
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
@@ -52,11 +52,11 @@ const Projects_Page = () => {
 					<section key={index} className={projectsStyle[cssClass]}>
 						<Container fluid>
 							<Row>
-								<div className={projectsStyle.browser}>
+								{/* <div className={projectsStyle.browser}>
 									<span className={projectsStyle.close}></span>
 									<span className={projectsStyle.minimize}></span>
 									<span className={projectsStyle.maximize}></span>
-								</div>
+								</div> */}
 
 								<div className={projectsStyle.frame}></div>
 

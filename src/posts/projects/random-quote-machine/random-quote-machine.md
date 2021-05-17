@@ -7,9 +7,7 @@ date: '13-5-2021'
 notPublished: false
 ---
 
-# Random Quote Machine
-
-### General Info
+### Description
 
 Random Quote Machine is a basic quote generator.
 

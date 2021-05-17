@@ -74,45 +74,42 @@ section {
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	// background-color: #fff !important;
-	// color: #000 !important;
-	// border-bottom: 1px solid #0f0e0e;
 
-	.browser {
-		display: flex;
-		position: absolute;
-		margin: 1rem 0;
-		span {
-			margin: 0 0.4rem;
-		}
-		.close {
-			width: 15px;
-			height: 15px;
-			border-radius: 100%;
-			background-color: #ff605c;
-			// position: relative;
-			// top: 12%;
-			// left: 1%;
-		}
-		.minimize {
-			width: 15px;
-			height: 15px;
-			border-radius: 100%;
-			background-color: #ffbd44;
-			// position: relative;
-			// top: 12%;
-			// left: 1%;
-		}
-		.maximize {
-			width: 15px;
-			height: 15px;
-			border-radius: 100%;
-			background-color: #00ca4e;
-			// position: relative;
-			// top: 12%;
-			// left: 1%;
-		}
-	}
+	// .browser {
+	// 	display: flex;
+	// 	position: absolute;
+	// 	margin: 1.5rem 10px;
+	// 	span {
+	// 		margin: 0 0.4rem;
+	// 	}
+	// 	.close {
+	// 		width: 15px;
+	// 		height: 15px;
+	// 		border-radius: 100%;
+	// 		background-color: #ff605c;
+	// 		// position: relative;
+	// 		// top: 12%;
+	// 		// left: 1%;
+	// 	}
+	// 	.minimize {
+	// 		width: 15px;
+	// 		height: 15px;
+	// 		border-radius: 100%;
+	// 		background-color: #ffbd44;
+	// 		// position: relative;
+	// 		// top: 12%;
+	// 		// left: 1%;
+	// 	}
+	// 	.maximize {
+	// 		width: 15px;
+	// 		height: 15px;
+	// 		border-radius: 100%;
+	// 		background-color: #00ca4e;
+	// 		// position: relative;
+	// 		// top: 12%;
+	// 		// left: 1%;
+	// 	}
+	// }
 
 	.frame {
 		position: fixed;
@@ -131,16 +128,26 @@ section {
 		align-items: center;
 
 		.bio-container {
+			margin-left: 2rem;
+
 			div {
 				display: flex;
 				// justify-content: space-between;
 
+				h1 {
+					font-size: 1.5rem;
+				}
+
 				svg {
-					color: #fff;
-					font-size: 2.5rem;
+					font-size: 1.5rem;
 					margin-left: 5rem;
 					margin-bottom: 1.45rem;
 				}
+			}
+
+			p {
+				font-size: 0.9rem;
+				width: 400px;
 			}
 		}
 	}
@@ -156,27 +163,19 @@ section {
 }
 
 // Styling individual section
-.hangman {
-	color: #fff;
-	background: #6f6977;
-	height: 100vh;
+.indecision {
+	// color: #fff;
+	// background: #90cba4;
 
 	.bio-container {
-		// margin-bottom: 10.4rem;
-	}
+		color: #90cba4;
 
-	.cardImg {
-		background-image: url(../../posts/projects/hangman-game/hangman-game.png);
-		background-attachment: fixed !important;
-		width: 540px;
-		height: 100vh;
-		background-repeat: no-repeat;
+		div {
+			svg {
+				color: #90cba4;
+			}
+		}
 	}
-}
-
-.indecision {
-	color: #fff;
-	background: #90cba4;
 
 	.cardImg {
 		background-image: url(../../posts/projects/indecision-app/indecision-app.png);
@@ -187,22 +186,19 @@ section {
 	}
 }
 
-.quoteMachine {
-	color: #fff;
-	background: #f7d1d1;
-
-	.cardImg {
-		background-image: url(../../posts/projects/random-quote-machine/random-quote-machine.png);
-		background-attachment: fixed !important;
-		width: 540px;
-		height: 100vh;
-		background-repeat: no-repeat;
-	}
-}
-
 .recipe {
-	color: #fff;
-	background: #89b1d1;
+	// color: #fff;
+	// background: #89b1d1;
+
+	.bio-container {
+		color: #89b1d1;
+
+		div {
+			svg {
+				color: #89b1d1;
+			}
+		}
+	}
 
 	.cardImg {
 		background-image: url(../../posts/projects/recipe-app/recipe-app.png);
@@ -213,17 +209,70 @@ section {
 	}
 }
 
-.todo {
-	color: #fff;
-	background: #a37ec9;
-	border-bottom: none;
+.quoteMachine {
+	// color: #fff;
+	// background: #f17476;
 
 	.bio-container {
-		// margin-top: 133.4px;
+		color: #f17476;
+
+		div {
+			svg {
+				color: #f17476;
+			}
+		}
+	}
+
+	.cardImg {
+		background-image: url(../../posts/projects/random-quote-machine/random-quote-machine.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
+}
+
+.todo {
+	// color: #fff;
+	// background: #a37ec9;
+
+	.bio-container {
+		color: #a37ec9;
+
+		div {
+			svg {
+				color: #a37ec9;
+			}
+		}
 	}
 
 	.cardImg {
 		background-image: url(../../posts/projects/todo-app/todo-app.png);
+		background-attachment: fixed !important;
+		width: 540px;
+		height: 100vh;
+		background-repeat: no-repeat;
+	}
+}
+
+.hangman {
+	// color: #fff;
+	// background: #6f6977;
+	height: 100vh;
+
+	.bio-container {
+		color: #6f6977;
+		margin-top: 133.4px;
+
+		div {
+			svg {
+				color: #6f6977;
+			}
+		}
+	}
+
+	.cardImg {
+		background-image: url(../../posts/projects/hangman-game/hangman-game.png);
 		background-attachment: fixed !important;
 		width: 540px;
 		height: 100vh;
