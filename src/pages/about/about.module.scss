@@ -1,18 +1,29 @@
 .about-section {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	// justify-content: center;
 	height: 90vh;
 
 	.about-container {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		h1 {
+			text-align: center;
+			text-decoration: underline;
+			font-size: 5rem;
+			margin: 1rem 0 1rem 0;
+		}
 
 		.aboutBio {
 			// color: #fff;
-			// background-color: #343434;
-			border-radius: 1rem;
+			// background-color: #141414;
+			// border-radius: 1rem;
+			text-align: center;
 			padding: 1rem;
-			width: 48%;
+			width: 60%;
 
 			h2 {
 				font-size: 1.5rem;
@@ -85,12 +96,86 @@
 			}
 		}
 	}
+
+	.scroll-down {
+		span {
+			position: absolute;
+			// top: 0;
+			left: 50%;
+			width: 30px;
+			height: 50px;
+			margin-left: -15px;
+			border: 2px solid #141414;
+			border-radius: 50px;
+			box-sizing: border-box;
+
+			&::before {
+				position: absolute;
+				top: 10px;
+				left: 50%;
+				content: '';
+				width: 6px;
+				height: 6px;
+				margin-left: -3px;
+				background-color: #141414;
+				border-radius: 100%;
+				-webkit-animation: sd 2s infinite;
+				animation: sd 2s infinite;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	.visible {
+		opacity: 1;
+		transition: all 1.2s ease-in-out;
+	}
+
+	.invisible {
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	@-webkit-keyframes sd {
+		0% {
+			-webkit-transform: translate(0, 0);
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+		80% {
+			-webkit-transform: translate(0, 20px);
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes sd {
+		0% {
+			transform: translate(0, 0);
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+		80% {
+			transform: translate(0, 20px);
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
 }
 
 .hobbies-container {
 	h1 {
 		text-align: center;
-		margin-bottom: 3rem;
+		text-decoration: underline;
+		font-size: 5rem;
+		margin: 1rem 0 4rem 0;
 	}
 
 	.windsurfing-row,
@@ -102,11 +187,11 @@
 	.windsurfing-container,
 	.bartending-container {
 		display: flex;
-		justify-content: end;
+		justify-content: flex-end;
 
 		.windsurfing-hero,
 		.bartending-hero {
-			box-shadow: -70px 0px 0px #000;
+			box-shadow: -70px 0px 0px #141414;
 		}
 	}
 
@@ -116,14 +201,14 @@
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
-		border: 1px solid black;
+		border: 1px solid #141414;
 		padding: 0rem 1rem;
 		border-radius: 1rem;
-		box-shadow: 5px -3px 0px #000;
+		box-shadow: 10px 10px 0px #141414;
 
 		h1 {
 			font-size: 1.4rem;
-			margin: 1rem 0;
+			margin: 0 0px 2rem 0;
 			text-align: start;
 		}
 
@@ -134,10 +219,10 @@
 
 	.snowboarder-container {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 
 		.snowboarder-hero {
-			box-shadow: 70px 0px 0px #000;
+			box-shadow: 70px 0px 0px #141414;
 		}
 	}
 
@@ -147,14 +232,14 @@
 		justify-content: center;
 		text-align: start;
 		height: 100%;
-		border: 1px solid black;
+		border: 1px solid #141414;
 		padding: 0 1rem;
 		border-radius: 1rem;
-		box-shadow: -5px -3px 0px #000;
+		box-shadow: -10px 10px 0px #141414;
 
 		h1 {
 			font-size: 1.4rem;
-			margin: 1rem 0;
+			margin: 0 0px 2rem 0;
 			text-align: start;
 		}
 

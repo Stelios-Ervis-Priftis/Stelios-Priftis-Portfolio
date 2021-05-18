@@ -31,7 +31,7 @@ const Index_Page = () => {
 						<Link to="/contact">
 							<Button className={indexStyles.ctaContact}>
 								Need a Developer?
-								<BiMailSend className="animate__animated animate__pulse animate__fast animate__infinite" style={{ fontSize: '30px' }} />
+								<BiMailSend className="animate__animated animate__pulse animate__fast animate__infinite" style={{ fontSize: '30px', marginLeft: '5px' }} />
 							</Button>
 						</Link>
 					</Col>

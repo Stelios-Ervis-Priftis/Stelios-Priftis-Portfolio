@@ -1,44 +1,45 @@
 $animate-ease-in-out: all 0.5s ease-in-out;
 
 .container {
-  background-color: #343434;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  .icons {
-    font-size: 1.3rem;
+	background-color: #141414;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	.icons {
+		font-size: 1.3rem;
 
-    a {
-      color: #fff;
-      transition: $animate-ease-in-out;
-    }
+		a {
+			color: #fff;
+			transition: $animate-ease-in-out;
+		}
 
-    svg {
-      margin: 0 0.8rem 0.5rem;
-      padding: 0;
-    }
+		svg {
+			margin: 0 0.8rem 0.5rem;
+			padding: 0;
+		}
 
-    svg:hover {
-      // color: hsla(0, 0%, 100%, 0.7);
-      transform: rotate(360deg);
-      transition: $animate-ease-in-out;
-    }
-  }
-  p {
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-  }
+		svg:hover {
+			// color: hsla(0, 0%, 100%, 0.7);
+			transform: rotate(360deg);
+			transition: $animate-ease-in-out;
+		}
+	}
+	p {
+		font-size: 0.8rem;
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
 }
 
 @media screen and (max-width: 960px) {
-  .container {
-    height: 10vh;
-  }
-  p {
-    font-size: 0.8rem;
-  }
+	.container {
+		height: 10vh;
+	}
+	p {
+		font-size: 0.8rem;
+	}
 }

@@ -10,24 +10,23 @@
 			margin: auto;
 			.hero-img {
 				margin: auto;
-				box-shadow: -100px 0px 0px #000;
-				-moz-box-shadow: -100px 0px 0px #000;
-				-webkit-box-shadow: -100px 0px 0px #000;
+				box-shadow: -100px 0px 0px #141414;
+				-moz-box-shadow: -100px 0px 0px #141414;
+				-webkit-box-shadow: -100px 0px 0px #141414;
 			}
 		}
 		.hero-bio {
 			margin: auto;
-			border: 1px solid black;
+			border: 1px solid #141414;
 			padding: 1rem;
 			border-radius: 1rem;
-			box-shadow: 5px -3px 0px #000;
+			box-shadow: 10px 10px 0px #141414;
 
 			h1 {
 				font-size: 2.3rem;
 			}
 
 			p {
-				// width: 70%;
 				font-size: 0.8rem;
 			}
 			// .cta-container {
@@ -47,8 +46,9 @@
 				font-size: 0.8rem;
 				font-weight: bold;
 				text-transform: uppercase;
-				width: 45%;
+				// width: 45%;
 				height: 35px;
+
 				&:hover {
 					background-color: darken(#28df99, $amount: 5);
 				}

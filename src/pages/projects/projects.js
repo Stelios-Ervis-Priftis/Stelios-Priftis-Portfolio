@@ -49,7 +49,7 @@ const Projects_Page = () => {
 				const { slug } = project.node.fields;
 
 				return (
-					<section key={index} className={projectsStyle[cssClass]}>
+					<section key={index} className={`${projectsStyle[cssClass]} ${projectsStyle.section}`}>
 						<Container fluid>
 							<Row>
 								{/* <div className={projectsStyle.browser}>
