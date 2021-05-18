@@ -33,11 +33,11 @@ const About_Page = () => {
 						<p>After dabbling with code in my spare time, I realise I was hooked and decided to take a BootCamp course in order to learn how to code properly. This has exposed me to full-stack technologies culminating in several projects.</p>
 						<p>I would like to work closely with an experienced mentor to continue building my skills, further grow and develop my love for coding. Currently, I am looking for a job opportunity in the field as a Front - End Developer that will give me all the opportunities for growth, both personally and professionally.</p>
 					</div>
-				</Container>
 
-				<div className={`${aboutStyles.scrollDown}`}>
-					<span className={scroll ? aboutStyles.visible : aboutStyles.invisible}></span>
-				</div>
+					<div className={`${aboutStyles.scrollDown}`}>
+						<span className={scroll ? aboutStyles.visible : aboutStyles.invisible}></span>
+					</div>
+				</Container>
 			</section>
 
 			<section className={aboutStyles.hobbiesSection}>

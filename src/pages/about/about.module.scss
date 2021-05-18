@@ -31,6 +31,8 @@
 
 			p {
 				font-size: 0.8rem;
+				font-weight: bold;
+				font-style: italic;
 			}
 		}
 
@@ -187,11 +189,11 @@
 	.windsurfing-container,
 	.bartending-container {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 
 		.windsurfing-hero,
 		.bartending-hero {
-			box-shadow: -70px 0px 0px #141414;
+			box-shadow: 0px 1px 3px #141414;
 		}
 	}
 
@@ -214,15 +216,17 @@
 
 		p {
 			font-size: 0.8rem;
+			font-weight: bold;
+			font-style: italic;
 		}
 	}
 
 	.snowboarder-container {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 
 		.snowboarder-hero {
-			box-shadow: 70px 0px 0px #141414;
+			box-shadow: 0px 1px 3px #141414;
 		}
 	}
 
@@ -245,6 +249,8 @@
 
 		p {
 			font-size: 0.8rem;
+			font-weight: bold;
+			font-style: italic;
 		}
 	}
 }

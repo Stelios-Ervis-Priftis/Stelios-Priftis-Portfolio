@@ -24,6 +24,10 @@
 				justify-content: space-between;
 
 				.cta-send {
+					path {
+						color: #fff;
+					}
+
 					border: none;
 					background-color: #28df99;
 					font-size: 0.8rem;
@@ -37,6 +41,10 @@
 				}
 
 				.cta-clear {
+					path {
+						color: #fff;
+					}
+
 					border: none;
 					background-color: #ffc107;
 					font-size: 0.8rem;
