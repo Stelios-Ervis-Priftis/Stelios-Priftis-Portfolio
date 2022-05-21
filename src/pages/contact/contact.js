@@ -58,16 +58,24 @@ const Contact_Page = () => {
 							</Form.Group>
 
 							<Form.Group>
-								<Form.Control className={contactStyles.formInput} as="textarea" name="message" placeholder="Message ..." rows="4" style={{ resize: 'none' }} required />
+								<Form.Control
+									className={contactStyles.formInput}
+									as="textarea"
+									name="message"
+									placeholder="Message ..."
+									rows="4"
+									style={{ resize: 'none' }}
+									required
+								/>
 							</Form.Group>
 
 							<div className={contactStyles.ctaContainer}>
-								<Button className={contactStyles.ctaSend} type="submit">
-									SEND <RiSendPlaneFill />
-								</Button>
-
 								<Button className={contactStyles.ctaClear} type="reset">
 									CLEAR <GiBroom />
+								</Button>
+
+								<Button className={contactStyles.ctaSend} type="submit">
+									SEND <RiSendPlaneFill />
 								</Button>
 							</div>
 						</Form>

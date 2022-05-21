@@ -22,7 +22,12 @@ const Index_Page = () => {
 			<Container fluid className={indexStyles.indexContainer}>
 				<Row className={indexStyles.indexRow}>
 					<Col lg="6" className={indexStyles.heroCol}>
-						<Image fileName="hero.jpeg" className={`${indexStyles.heroImg} rounded-circle`} style={{ width: '370px' }} alt="Hero of the pic" />
+						<Image
+							fileName="hero-coloured.jpg"
+							className={`${indexStyles.heroImg} rounded-circle`}
+							style={{ width: '370px' }}
+							alt="Hero of the pic"
+						/>
 					</Col>
 
 					<Col lg="6" className={indexStyles.bioCol}>
@@ -32,7 +37,10 @@ const Index_Page = () => {
 							<Link to="/contact">
 								<Button className={indexStyles.ctaContact}>
 									Need a Developer?
-									<BiMailSend className="animate__animated animate__pulse animate__fast animate__infinite" style={{ fontSize: '30px', marginLeft: '5px' }} />
+									<BiMailSend
+										className="animate__animated animate__pulse animate__fast animate__infinite"
+										style={{ fontSize: '30px', marginLeft: '5px' }}
+									/>
 								</Button>
 							</Link>
 						</div>
