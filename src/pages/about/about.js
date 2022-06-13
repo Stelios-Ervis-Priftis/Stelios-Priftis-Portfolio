@@ -14,8 +14,8 @@ import aboutStyles from './about.module.scss';
 import 'react-sweet-progress/lib/style.css';
 
 // React Icons Import
-import { FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
-import { SiBabel, SiWebpack, SiNpm } from 'react-icons/si';
+// import { FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
+// import { SiBabel, SiWebpack, SiNpm } from 'react-icons/si';
 
 const About_Page = () => {
 	const [scroll, isScrolled] = useState(true);
@@ -23,72 +23,107 @@ const About_Page = () => {
 	return (
 		<Layout>
 			<SEO title="About" />
-			<section className={aboutStyles.aboutSection} onWheel={(e) => isScrolled(e.deltaY >= 0 ? !isScrolled : !!isScrolled)}>
-				<Container fluid className={aboutStyles.aboutContainer}>
-					<h1>My Story</h1>
-					<div className={aboutStyles.aboutBio}>
-						<h2>About Stelios</h2>
-						<p>I’m a Front - End Developer with a background in Sound Engineering.</p>
-						<p>When I was working as a Sound Engineer I was curious about how software programs work. So I started doing some research and I bumped into an enormous amount of courses and information about coding and what you can achieve with it.</p>
-						<p>After dabbling with code in my spare time, I realise I was hooked and decided to take a BootCamp course in order to learn how to code properly. This has exposed me to full-stack technologies culminating in several projects.</p>
-						<p>I would like to work closely with an experienced mentor to continue building my skills, further grow and develop my love for coding. Currently, I am looking for a job opportunity in the field as a Front - End Developer that will give me all the opportunities for growth, both personally and professionally.</p>
-					</div>
+			<Container fluid className={aboutStyles.aboutLayout}>
+				<section className={aboutStyles.aboutSection} onWheel={(e) => isScrolled(e.deltaY >= 0 ? !isScrolled : !!isScrolled)}>
+					<Container fluid className={aboutStyles.aboutContainer}>
+						<h1>About Stelios</h1>
+						<div className={aboutStyles.aboutBio}>
+							<p>I'm a Front - End Developer with a background in Sound Engineering.</p>
+							<p>
+								When I was working as a Sound Engineer I was curious about how software programs work. So I started doing some research and I
+								bumped into an enormous amount of courses and information about coding and what you can achieve with it.
+							</p>
+							<p>
+								After dabbling with code in my spare time, I realise I was hooked and decided to take a BootCamp course in order to learn how
+								to code properly. This has exposed me to full-stack technologies culminating in several projects.
+							</p>
+							<p>
+								I would like to work closely with an experienced mentor to continue building my skills, further grow and develop my love for
+								coding. Currently, I am looking for a job opportunity in the field as a Front - End Developer that will give me all the
+								opportunities for growth, both personally and professionally.
+							</p>
+						</div>
 
-					<div className={`${aboutStyles.scrollDown}`}>
+						{/* <div className={`${aboutStyles.scrollDown}`}>
 						<span className={scroll ? aboutStyles.visible : aboutStyles.invisible}></span>
-					</div>
-				</Container>
-			</section>
+					</div> */}
+					</Container>
+				</section>
 
-			<section className={aboutStyles.hobbiesSection}>
-				<Container fluid className={aboutStyles.hobbiesContainer}>
-					<h1>My Hobbies</h1>
-					<Row className={aboutStyles.windsurfingRow}>
-						<Col lg="4">
-							<div className={aboutStyles.windsurfingContainer}>
-								<Image fileName="windsurfing.jpg" className={`${aboutStyles.windsurfingHero} rounded-circle`} style={{ width: '250px', height: '250px' }} alt="Hero of the pic" />
-							</div>
-						</Col>
+				<section className={aboutStyles.hobbiesSection}>
+					<Container fluid className={aboutStyles.hobbiesContainer}>
+						<h1>My Hobbies</h1>
+						<Row className={aboutStyles.windsurfingRow}>
+							<Col lg="4">
+								<div className={aboutStyles.windsurfingContainer}>
+									<Image
+										fileName="windsurfing.jpg"
+										className={`${aboutStyles.windsurfingHero} rounded-circle`}
+										style={{ width: '250px', height: '250px' }}
+										alt="Hero of the pic"
+									/>
+								</div>
+							</Col>
 
-						<Col lg="8">
-							<div className={aboutStyles.windsurfingBio}>
-								<h1>Wind Surfing</h1>
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.</p>
-							</div>
-						</Col>
-					</Row>
+							<Col lg="8">
+								<div className={aboutStyles.windsurfingBio}>
+									<h1>Wind Surfing</h1>
+									<p>
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel
+										earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.
+									</p>
+								</div>
+							</Col>
+						</Row>
 
-					<Row className={aboutStyles.snowboarderRow}>
-						<Col lg="8">
-							<div className={aboutStyles.snowboarderBio}>
-								<h1>Snow Boarding</h1>
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.</p>
-							</div>
-						</Col>
+						<Row className={aboutStyles.snowboarderRow}>
+							<Col lg="8">
+								<div className={aboutStyles.snowboarderBio}>
+									<h1>Snow Boarding</h1>
+									<p>
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel
+										earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.
+									</p>
+								</div>
+							</Col>
 
-						<Col lg="4">
-							<div className={aboutStyles.snowboarderContainer}>
-								<Image fileName="snowboarding.jpg" className={`${aboutStyles.snowboarderHero} rounded-circle`} style={{ width: '250px', height: '250px' }} alt="Hero of the pic" />
-							</div>
-						</Col>
-					</Row>
+							<Col lg="4">
+								<div className={aboutStyles.snowboarderContainer}>
+									<Image
+										fileName="snowboarding.jpg"
+										className={`${aboutStyles.snowboarderHero} rounded-circle`}
+										style={{ width: '250px', height: '250px' }}
+										alt="Hero of the pic"
+									/>
+								</div>
+							</Col>
+						</Row>
 
-					<Row className={aboutStyles.bartendingRow}>
-						<Col lg="4">
-							<div className={aboutStyles.bartendingContainer}>
-								<Image fileName="bartending.jpg" className={`${aboutStyles.bartendingHero} rounded-circle`} style={{ width: '250px', height: '250px' }} alt="Hero of the pic" />
-							</div>
-						</Col>
+						<Row className={aboutStyles.bartendingRow}>
+							<Col lg="4">
+								<div className={aboutStyles.bartendingContainer}>
+									<Image
+										fileName="bartending.jpg"
+										className={`${aboutStyles.bartendingHero} rounded-circle`}
+										style={{ width: '250px', height: '250px' }}
+										alt="Hero of the pic"
+									/>
+								</div>
+							</Col>
 
-						<Col lg="8">
-							<div className={aboutStyles.bartendingBio}>
-								<h1>Bartending</h1>
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.</p>
-							</div>
-						</Col>
-					</Row>
-				</Container>
-			</section>
+							<Col lg="8">
+								<div className={aboutStyles.bartendingBio}>
+									<h1>Bartending</h1>
+									<p>
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel
+										earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.
+									</p>
+								</div>
+							</Col>
+						</Row>
+					</Container>
+				</section>
+			</Container>
 		</Layout>
 	);
 };
