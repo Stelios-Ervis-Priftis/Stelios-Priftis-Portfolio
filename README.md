@@ -4,5 +4,8 @@
 
 <p align="center">
 	npm install -> to install necessary dependencies
+</p>
+
+<p align="center">
 	npm development -> to run the project
 </p>
