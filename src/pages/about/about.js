@@ -53,7 +53,7 @@ const About_Page = () => {
 						<Col lg="8">
 							<div className={aboutStyles.windsurfingBio}>
 								<h1>Wind Surfing</h1>
-								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptate illo, impedit quam ipsum ex perferendis vel earum dolore aut deleniti possimus, sapiente natus itaque, nobis aliquid neque velit fugit.</p>
+								<p>Windsurfing is my ultimate summer passion. The rush of gliding on water, powered by the wind, is an exhilarating experience like no other. It's a constant pursuit of mastering the elements, pushing boundaries, and embracing the beauty of nature. Windsurfing isn't just a hobby; it's a way of life that fuels my spirit and sense of adventure.</p>
 							</div>
 						</Col>
 					</Row>
