@@ -4,23 +4,23 @@ import Img from 'gatsby-image';
 // import Img from 'gatsby-background-image';
 
 const Image = ({ fileName, className, style, alt }) => {
-	const { allImageSharp } = useStaticQuery(graphql`
-		query {
-			allImageSharp {
-				nodes {
-					fluid {
-						originalName
-						...GatsbyImageSharpFluid
-						...GatsbyImageSharpFluidLimitPresentationSize
-					}
-				}
-			}
-		}
-	`);
+  const { allImageSharp } = useStaticQuery(graphql`
+    query {
+      allImageSharp {
+        nodes {
+          fluid {
+            originalName
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+    }
+  `);
 
-	const fluidImg = allImageSharp.nodes.find((img) => img.fluid.originalName === fileName).fluid;
+  const fluidImg = allImageSharp.nodes.find((img) => img.fluid.originalName === fileName).fluid;
 
-	return <Img fluid={fluidImg} className={className} style={style} alt={alt} />;
+  return <Img fluid={fluidImg} className={className} style={style} alt={alt} />;
 };
 
 export default Image;

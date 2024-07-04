@@ -1,41 +1,39 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
 
 // Navbar MenuItems Data Import
-import { MenuItems } from "./menu_item"
+import { MenuItems } from './menu_item';
 
 // React Bootstrap Style Import
-import { Container } from "react-bootstrap"
+import { Container } from 'react-bootstrap';
 
 // Navbar Styles SCSS Import
-import navbarStyles from "./navbar.module.scss"
+import navbarStyles from './navbar.module.scss';
 
 // React Icons Import
-import { FaBars, FaRegTimesCircle } from "react-icons/fa"
-// import { AiFillCode } from "react-icons/ai"
-// import { AiOutlineCode } from "react-icons/ai"
-import { RiCodeBoxFill } from "react-icons/ri"
+import { FaBars, FaRegTimesCircle } from 'react-icons/fa';
+import { AiOutlineCode } from 'react-icons/ai';
 
 const Navbar = () => {
-  const [open, toggleHumbugger] = useState(false)
+  const [open, toggleHumbugger] = useState(false);
+
+  const handleToggleHumbugger = () => {
+    toggleHumbugger(!open);
+  };
 
   return (
-    <Container
-      fluid
-      className={
-        open ? navbarStyles.NavbarItemsActive : navbarStyles.NavbarItems
-      }
-    >
+    <Container fluid className={open ? navbarStyles.NavbarItemsActive : navbarStyles.NavbarItems}>
       <Link to="/" className={navbarStyles.navbarLogo}>
-        {/* <AiFillCode style={{ fontSize: "40px" }} /> */}
-        {/* <AiOutlineCode style={{ fontSize: "40px" }} /> */}
-        <RiCodeBoxFill />
-        <h1>FRONT END DEVELOPER</h1>
+        <AiOutlineCode />
+        <h1>Software Engineer</h1>
       </Link>
 
       <div
         className={navbarStyles.menuIcon}
-        onClick={() => toggleHumbugger(!open)}
+        onClick={handleToggleHumbugger}
+        onKeyDown={handleToggleHumbugger}
+        role="button"
+        tabIndex={0}
       >
         {open ? (
           <FaRegTimesCircle className={navbarStyles.xIcon} />
@@ -55,11 +53,11 @@ const Navbar = () => {
             >
               {text}
             </Link>
-          )
+          );
         })}
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

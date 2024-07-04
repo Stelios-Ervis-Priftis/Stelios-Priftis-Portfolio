@@ -1,14 +1,14 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 // React Bootstrap Style Import
-import { Container } from "react-bootstrap"
+import { Container } from 'react-bootstrap';
 
 // Footer Styles SCSS Import
-import footerStyles from "./footer.module.scss"
+import footerStyles from './footer.module.scss';
 
 // React Icons Import
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const Footer = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <Container fluid className={footerStyles.container}>
       <div className={footerStyles.copyright}>
@@ -36,12 +36,12 @@ const Footer = () => {
           <FaLinkedin />
         </a>
 
-        <a href="https://www.instagram.com/stelios_priftis/" target="#">
+        {/* <a href="https://www.instagram.com/stelios_priftis/" target="#">
           <FaInstagram />
-        </a>
+        </a> */}
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

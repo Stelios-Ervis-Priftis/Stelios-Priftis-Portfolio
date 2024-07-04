@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-	npm development -> to run the project
+	npm run development -> to run the project
 </p>
