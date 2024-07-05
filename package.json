@@ -39,7 +39,7 @@
   "license": "0BSD",
   "scripts": {
     "production": "gatsby build",
-    "development": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "development": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop -p 3000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
