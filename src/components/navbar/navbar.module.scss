@@ -6,11 +6,12 @@ $animate-ease-in-out: all 0.2s ease-in-out;
   background-color: #fff;
   height: 10vh;
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
   z-index: 1;
+  border-bottom: 2px solid black;
 }
 
 .navbarLogo {
