@@ -4,19 +4,22 @@ sortBio: 'Generate a random quote!'
 img: 'random-quote-machine.png'
 cssClass: 'quoteMachine'
 date: '13-5-2021'
+Refactored: '27-8-2024'
 notPublished: false
 ---
 
 ### Description
 
-Random Quote Machine is a basic quote generator.
+The Random Quote Machine is a simple quote generator application. It fetches quotes from an external API and displays a random quote every time you click the “New Quote” button. Each time a new quote is generated, the background color changes dynamically, providing a fresh look with each interaction.
 
-It calls API services and randomly generates a quote for you from a click press of a button New Quote. As a result it will render a new quote for you and colors will change every time you generate a new quote.
+This project was initially created to practice React skills and fulfill the requirements for the Front End Libraries Projects certification, **Build a Random Quote Machine** by [FreeCodeCamp](https://www.freecodecamp.org/learn/front-end-libraries/#front-end-libraries-projects) on **FreeCodeCamp**. Recently was refactored using Next.js to improve performance and resolve issues related to CORS and API availability.
 
-This project is created to put my React skills in practice. It is also designed as a freeCodeCamp certification project for Front End Libraries Projects, **Build a Random Quote Machine** by [FreeCodeCamp](https://www.freecodecamp.org/learn/front-end-libraries/#front-end-libraries-projects) on **FreeCodeCamp**.
+Visit the website, [Click here](https://random-quote-machine-next.vercel.app/).
 
-Visit the website, [Click here](https://random-quote-machine.vercel.app/).
+### Side note
+
+The Quote Machine Generator underwent a full refactor to address CORS issues and the discontinuation of the original API. The refactored version now leverages Next.js, utilizing server-side API routes to mimic a proxy server. This setup allows the application to fetch data server-side from external APIs and serve it to the client, effectively bypassing CORS restrictions.
 
 ### Used Technologies
 
-_Html - Scss - React - Babel - Webpack - NPM_
+_NextJs - React - CSS Modules - Axios - NPM_
